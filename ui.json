@@ -5,7 +5,7 @@
     {
       "label": "Awesome World",
       "menu": "start",
-      "urlKey": "hello-world",
+      "urlKey": "awesome-world",
       "entryPoint": "index.html"
     }
   ]
