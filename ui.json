@@ -3,7 +3,7 @@
   "namespace": "MyFirstView",
   "menuEntries": [
     {
-      "label": "Hello World",
+      "label": "Awesome World",
       "menu": "start",
       "urlKey": "hello-world",
       "entryPoint": "index.html"
