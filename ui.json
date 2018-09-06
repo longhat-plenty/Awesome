@@ -4,7 +4,7 @@
   "menuEntries": [
     {
       "label": "Awesome World",
-      "menu": "start",
+      "menu": "order",
       "urlKey": "awesome-world",
       "entryPoint": "index.html"
     }
