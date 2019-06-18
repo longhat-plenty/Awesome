@@ -9,6 +9,6 @@ use Plenty\Plugin\ServiceProvider;
     {
         public function register()
         {
-          
+          $test = 'test';
         }
     }
