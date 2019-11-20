@@ -1,0 +1,630 @@
+<aside class="plenty-anchor-navbar">
+    <div class="sticky-wrapper">
+        <div class="sticky-container" data-fn="sticky-container" data-fn-options="{ onLoadHashScrollToLink: true }">
+            <div id="toc" class="toc">
+<div id="toctitle">Inhalt</div>
+<ul class="sectlevel1">
+<li><a href="#lieferanschriftenliste-exportieren"><span>1.</span><span> Lieferanschriftenliste exportieren</span></a></li>
+<li><a href="#paketnummern-importieren"><span>2.</span><span> Paketnummern importieren</span></a>
+<ul class="sectlevel2">
+<li><a href="#paketnummern-elasticsync"><span>2.1.</span><span> Paketnummern mit dem ElasticSync importieren</span></a></li>
+<li><a href="#paketnummern-manuell-importieren"><span>2.2.</span><span> Paketnummern manuell importieren</span></a></li>
+<li><a href="#paketnummern-barcodescanner"><span>2.3.</span><span> Paketnummern mit Hilfe eines Barcodescanners importieren</span></a></li>
+</ul>
+</li>
+<li><a href="#adressetikett-einrichten"><span>3.</span><span> Adressetikett einrichten</span></a>
+<ul class="sectlevel2">
+<li><a href="#adressetikettenvorlage"><span>3.1.</span><span> Adressetikettenvorlage erstellen</span></a></li>
+<li><a href="#pdf-vorlage"><span>3.2.</span><span> PDF-Vorlage speichern</span></a></li>
+<li><a href="#artikelauflistung"><span>3.3.</span><span> Artikelauflistung</span></a></li>
+<li><a href="#adressetikett-erzeugen"><span>3.4.</span><span> Adressetikett erzeugen</span></a></li>
+</ul>
+</li>
+<li><a href="#einlieferungsliste"><span>4.</span><span> Einlieferungsliste generieren</span></a></li>
+</ul>
+</div>
+        </div>
+    </div>
+</aside>
+
+<main id="main">
+    <h1>Dokumente erzeugen</h1><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Auf dieser Handbuchseite wird beschrieben, wie du die Lieferanschriftenliste zu deinem Versanddienstleister exportierst und anschließend die Paketnummern, die du von deinem Versanddienstleister erhältst, importierst. Die Versandlabels kannst du drucken, nachdem du deine Aufträge online bei deinem Versanddienstleister angemeldet hast. Außerdem erfährst du, wie du Adressetiketten per Vorlage einrichtest und Einlieferungslisten generierst.</p>
+</div>
+<div class="paragraph">
+<p>Wie du die anderen in plentymarkets verfügbaren Dokumente wie z.B. Rechnung, Auftragsbestätigung oder Lieferschein einrichtest, ist im Bereich <a href="/auftraege">Aufträge</a> beschrieben.</p>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="lieferanschriftenliste-exportieren">1. Lieferanschriftenliste exportieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Wenn du Pakete über einen Versanddienstleister versendest, benötigst du eine Lieferanschriftenliste. Die Lieferanschriftenliste ist eine Exportdatei mit Sendungsinformationen, die du dem Versanddienstleister anschließend bereitstellst, sodass der Versanddienstleister dir wiederum gültige Versandlabels für deine Pakete zur Verfügung stellen kann. Mit diesem Export kannst du schnell und einfach größere Mengen an Paketen für den Versand vorbereiten. Im Folgenden wird beschrieben, wie du die Lieferanschriften deiner Aufträge in eine Datei, die du für die Software deines Versanddienstleisters benötigst, exportierst.</p>
+</div>
+<div class="paragraph">
+<p>Wenn du Fragen zum Dateiimport in die Software des Versanddienstleisters oder zur Benutzung der Software hast, kontaktiere bitte den Anbieter.</p>
+</div>
+<div class="paragraph instruction">
+<p>Lieferanschriftenliste exportieren:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Aufträge » Fulfillment</strong>.</p>
+</li>
+<li>
+<p>Klappe den Bereich <strong>Lieferanschriftenliste</strong> auf (<span class="icon"><i class="fa fa-plus-square-o"></i></span>).</p>
+</li>
+<li>
+<p>Nimm die Einstellungen vor. Beachte dazu die Erläuterungen in <a href="#tabelle-lieferanschriftenliste-exportieren">Tabelle 1</a>.</p>
+</li>
+<li>
+<p>Klicke auf das Zahnrad (<span class="icon"><i class="fa fa-cog"></i></span>).<br>
+→ Du erhältst eine Datei, die du auf deinem Computer speicherst.</p>
+</li>
+<li>
+<p>Importiere die Datei anschließend in die Software deines Versanddienstleisters.</p>
+</li>
+</ol>
+</div>
+<table id="tabelle-lieferanschriftenliste-exportieren" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 1. Einstellungen im Menü <strong>Aufträge » Fulfillment</strong> im Bereich <strong>Lieferanschriftenliste</strong></caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Erläuterung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Suchfilter</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftragsstatus</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auftragsstatus wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eigner</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eigner wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zahlungsart</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zahlungsart wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Versandart</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Versandart wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zahlungseingang</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zahlungseingang wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datenformat</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datenformat der Software deines Versanddienstleisters wählen.<br>
+Wenn für die bearbeiteten Aufträge mehrere Versanddienstleister relevant sind, den Exportprozess nacheinander für alle Datenformate durchführen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Trennzeichen</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trennzeichen wählen.<br>
+Dieses Trennzeichen auch beim Import der Datei in die Software deines Versanddienstleisters wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Aktion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ändere Auftragsstatus</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auftragsstatus wählen, der den Aufträgen beim Export zugewiesen werden soll.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="Hinweis"></i>
+</td>
+<td class="content">
+<div class="title">Datenformat UPS WorldShip 11</div>
+<div class="paragraph">
+<p>Wenn du eine Lieferanschriftenliste mit dem Datenformat UPS WorldShip 11 generierst, wird der Inhalt des Feldes <strong>Adresszusatz</strong> der Lieferanschrift in den Spalten <strong>Str2</strong> bzw. <strong>Str3</strong> ausgegeben. Der Adresszusatz wird in Teilen zu je 35 Zeichen fortlaufend auf diese Spalten verteilt, soweit die Spalten leer sind. Sind die Spalten nicht leer, wird der Adresszusatz nicht ausgegeben.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="paketnummern-importieren">2. Paketnummern importieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Neben der Möglichkeit, größere Mengen an Paketnummern komfortabel über den <a href="/fulfillment/dokumente-erzeugen#paketnummern-elasticsync">ElasticSync</a> in dein System zu importieren, kannst du dies auch <a href="/fulfillent/dokumente-erzeugen#paketnummern-manuell-importieren">manuell</a> oder mit Hilfe eines <a href="/fulfillment/dokumente-erzeugen#paketnummern-barcodescanner">Barcodescanners</a> erledigen.</p>
+</div>
+<div class="sect2">
+<h3 id="paketnummern-elasticsync">2.1. Paketnummern mit dem ElasticSync importieren</h3>
+<div class="paragraph">
+<p>Der einfachste Weg, um Paketnummern in dein plentymarkets System zu importieren, ist der ElasticSync. Erstelle dazu einen Sync vom Typ <strong>Aufträge</strong>. Beachte dazu bitte unser <a href="/daten/daten-importieren/elasticsync-best-practices/best-practices-elasticsync-paketnummern-fulfillment">Best Practice: Paketnummern von Versanddienstleistern importieren</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="paketnummern-manuell-importieren">2.2. Paketnummern manuell importieren</h3>
+<div class="paragraph">
+<p>Im Menü <strong>Aufträge » Fulfillment</strong> im Tab <strong>Import Paketnummern</strong> im Bereich <strong>Listen-Import</strong> hast du die Möglichkeit, die Paketnummern mit der Auftrags-ID manuell einzugeben. Alternativ kannst du diese mit einem Barcodescanner von der Packliste abscannen. Wie du dabei vorgehen musst, wird im <a href="#paketnummern-barcodescanner">nächsten Kapitel</a> beschrieben.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="paketnummern-barcodescanner">2.3. Paketnummern mit Hilfe eines Barcodescanners importieren</h3>
+<div class="paragraph">
+<p>Wenn ein Auftrag fertig gepackt wurde, sollte in plentymarkets der Warenausgang gebucht werden. Der <strong>Status [7] Warenausgang gebucht</strong> und das aktuelle Datum als Warenausgangsdatum werden am Auftrag gespeichert. Dieser Vorgang kann beispielsweise durch Abscannen des Barcodes auf der Rechnung, Lieferschein, Packliste oder dem Adressetikett durchgeführt werden. Stelle sicher, dass dein Barcodescanner korrekt eingerichtet ist.</p>
+</div>
+<div class="paragraph">
+<p>Im Folgenden wird der Scan-Vorgang beispielhaft anhand der Packliste beschrieben.</p>
+</div>
+<div class="paragraph instruction">
+<p>Paketnummern mit Hilfe eines Barcodescanners importieren:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Aufträge » Fulfillment</strong>.</p>
+</li>
+<li>
+<p>Klappe den Bereich <strong>Rechnungen erzeugen</strong> auf (<span class="icon"><i class="fa fa-plus-square-o"></i></span>).</p>
+</li>
+<li>
+<p>Erzeuge eine oder mehrere Rechnungen. Beachte dazu die Erläuterungen auf der Handbuchseite <a href="/auftraege/auftragsdokumente/rechnungen-erzeugen">Rechnungen</a>.</p>
+</li>
+<li>
+<p>Erstelle aus diesen Rechnungen eine Packliste aller Aufträge, die nun verpackt werden müssen. Beachte dazu die Erläuterungen auf der Handbuchseite <a href="/auftraege/auftragsdokumente/packliste">Packliste</a>.</p>
+</li>
+<li>
+<p>Sobald ein Paket gepackt wurde, markiere diesen Auftrag auf der Packliste.</p>
+</li>
+<li>
+<p>Klebe außerdem unterhalb des Barcodes der Auftrags-ID einen kleinen Aufkleber mit der Paketnummer (Lightlabel) auf.</p>
+</li>
+<li>
+<p>Öffne das Menü <strong>Aufträge » Fulfillment</strong>.</p>
+</li>
+<li>
+<p>Wechsele in das Tab <strong>Import Paketnummern</strong>.</p>
+</li>
+<li>
+<p>Platziere den Cursor im ersten Feld im Bereich <strong>Listen-Import</strong>.</p>
+</li>
+<li>
+<p>Scanne zunächst die Auftrags-ID und anschließend die Paketnummer.<br>
+→ Durch einen Klick auf <strong>Speichern</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) unten links werden die Paketnummern bei allen Aufträgen im Tab <strong>Einstellungen</strong> gespeichert.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Richte im Menü <strong>Einrichtung » Aufträge » Ereignisse</strong> eine Ereignisaktion ein und wähle für das Ereignis <strong>Auftragsänderung &gt; Paketnummer</strong> die Aktion <strong>Auftrag &gt; Warenausgang buchen</strong>. Zudem kannst du deinen Kunden eine E-Mail-Vorlage mit der Paketnummer und einem Link zu Paketverfolgung senden. Weitere Informationen zu Ereignisaktionen findest du auf der Handbuchseite <a href="/automatisierung/ereignisaktionen">Ereignisaktionen</a>.</p>
+</div>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="adressetikett-einrichten">3. Adressetikett einrichten</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Im Gegensatz zu Versandlabels kannst du für Adressetiketten in plentymarkets genau festlegen, welche Informationen an welcher Stelle enthalten sein sollen. Da du Adressetiketten nicht vorgefertigt von einem Versanddienstleister erhältst, ist weder das Porto bereits abgerechnet, noch eine Sendungsnummer enthalten. Die Verwendung von Adressetiketten eignet sich besonders für Warensendungen, z.B. den Versand von Büchern, die du durch den individuellen Aufdruck Büchersendung u.U. günstiger versenden kannst als über das Gewicht des Pakets. Du kannst in plentymarkets die Adressetikettenvorlage einrichten, eine PDF-Datei erzeugen und mit dieser dann Etiketten drucken.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="Hinweis"></i>
+</td>
+<td class="content">
+<div class="title">Wann Paketdienst-Software nutzen?</div>
+<div class="paragraph">
+<p>Das Generieren von Adressetiketten in plentymarkets ist speziell für Warensendungen vorgesehen. Wenn das Paket über einen Paketdienst versendet wird, nutze die Software dieses Paketdienstes, um Versandlabels zu drucken. plentymarkets unterstützt den Datenaustausch mit verschiedenen Paketdiensten.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>Wenn du bereits eine Adressetikettenvorlage erstellt und eine PDF-Vorlage gespeichert hast, fahre mit Kapitel <a href="/fulfillment/dokumente-erzeugen#adressetikett-erzeugen">Adressetikett erzeugen</a> fort.</p>
+</div>
+<div class="sect2">
+<h3 id="adressetikettenvorlage">3.1. Adressetikettenvorlage erstellen</h3>
+<div class="paragraph">
+<p>Bevor Adressetiketten gedruckt werden können, musst du eine Vorlage erstellen. Gehe wie im Folgenden beschrieben vor, um eine neue Vorlage zu erstellen.</p>
+</div>
+<div class="paragraph instruction">
+<p>Adressetikettenvorlage erstellen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Dokumente » Adressetikett</strong>.</p>
+</li>
+<li>
+<p>Wechsele in das Tab <strong>Neue Vorlage</strong>.</p>
+</li>
+<li>
+<p>Nimm die Einstellungen vor. Beachte dazu die Erläuterungen in <a href="#tabelle-adressetikettenvorlage-erstellen">Tabelle 2</a>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Wichtig"></i>
+</td>
+<td class="content">
+<div class="title">Positionierung durch Koordinaten</div>
+<div class="paragraph">
+<p>Die Inhalte eines Etiketts werden durch Eingabe von Koordinaten (X, Y) positioniert. Die obere linke Ecke eines Etiketts ist der Ausgangspunkt.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<table id="tabelle-adressetikettenvorlage-erstellen" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 2. Einstellungen im Menü <strong>Einrichtung » Aufträge » Dokumente » Adressetikett</strong></caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Erläuterung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Layout-Titel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name der Adressetikettenvorlage. Dieser Name wird in Dropdown-Listen zur Auswahl der Vorlage angezeigt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zeichensatz</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Unicode</strong> oder <strong>ISO-8859-1</strong> wählen. Das Generieren von PDF-Dokumenten kann länger dauern, wenn der Zeichensatz Unicode verwendet wird.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Seite</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Werte (in mm) für die <strong>Breite</strong> und die <strong>Höhe</strong> eingeben.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Seitenrand</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Werte (in mm) für den linken und den oberen Seitenrand eingeben.<br>
+Der rechte und der untere Seitenrand müssen beim Druck ebenfalls beachtet werden. In der Regel sind die Abstände die gleichen wie der linke und der obere Rand. Dazu ggf. die Angaben des Etikettenherstellers beachten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Etikett</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Werte (in mm) für die <strong>Breite</strong> und die <strong>Höhe</strong> eingeben.<br>
+Die genauen Maße sind beim Etikettenpapier angegeben. Die Seitenränder sowie die Maße des verwendeten Druckpapiers beachten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zeilen pro Seite</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anzahl der Zeilen, die pro Seite erzeugt werden sollen, eingeben.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Spalten pro Seite</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anzahl der Spalten, die pro Seite erzeugt werden sollen, eingeben.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Reihenfolge von Ort und Postleitzahl</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reihenfolge aus der Dropdown-Liste wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ort und Land in Lieferanschrift in Großbuchstaben ausgeben</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wählen, ob Ort und Land in der Lieferanschrift in Großbuchstaben ausgegeben werden soll.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Land des Online-Shops in Lieferanschrift ausgeben</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wählen, ob das Land des Online-Shops in der Lieferanschrift ausgegeben werden soll.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Weitere Optionen wie z.B. <strong>Lieferanschrift</strong>, <strong>Rechnungsanschrift</strong>, <strong>Name</strong> und <strong>Kunden-ID</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zahlen für die Positionierung eingeben.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Artikelauflistung</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die Artikelauflistung bestimmt, wie die Artikeldaten auf dem Etikett angezeigt werden. Es gibt 2 Typen: <strong>Standard</strong> und <strong>Individuell</strong>. Eine Erläuterung zu diesen beiden Typen findest du im Kapitel <a href="/fulfillment/dokumente-erzeugen#artikelauflistung">Artikelauflistung</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Inhalt der Auftrags-ID</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrags-ID des Hauptauftrages</strong> oder <strong>Auftrags-ID des Lieferauftrages</strong> wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Barcode horizontal</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Koordinaten zur Positionierung des Barcodes und Maße eingeben.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Infoleiste</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die Infoleiste beinhaltet alle wichtigen Informationen. Diese Informationen werden in einer Zeile zusammengefasst, was folgendermaßen aussieht:<br>
+RG:Rechnungs.NR / ZA: (Zahlungsart) / SU: Preissumme / Datum</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kundeneigenschaften</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die Koordinaten zur Positionierung der Kundeneigenschaften eingeben. Die <a href="/crm/kontakte-verwalten#4000">Eigenschaft</a> aus der Dropdown-Liste wählen. Auf den Adressetiketten wird der Text angezeigt, der im Menü <a href="/crm/kontakte-verwalten#4000">CRM » Kontakte » Kontakt öffnen » Ansicht: Eigenschaften</a> gespeichert wurde.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Freitextfelder 1 bis 10</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Freitextfelder ermöglichen das Anzeigen beliebiger Texte, die dort eingegeben wurden.<br>
+<strong><em>Beispiel:</em></strong> Ein verbreitetes Anwendungsbeispiel ist das Speichern des Absenders.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Bereits erstellte Vorlagen kannst du im Menü <strong>Einrichtung » Aufträge » Dokumente » Adressetikett</strong> im Tab <strong>Vorlagen</strong> aus der Dropdown-Liste <strong>Vorlage</strong> wählen und bearbeiten. Du hast auch die Möglichkeit, eine Vorschau des Etiketts anzuzeigen und die Vorlage im Vorschaumodus direkt zu drucken. Wenn du die Vorlage löschst, wird auch die Verknüpfung der PDF-Vorlage gelöscht.</p>
+</div>
+<div class="paragraph">
+<p>Der Bereich <strong>PDF-Vorlage</strong> wird erst nach dem Speichern einer Vorlage sichtbar und dient dazu, dem Dokument optional eine PDF-Vorlage zu speichern. Wie du die PDF-Vorlage speicherst, ist im nächsten Kapitel beschrieben.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="pdf-vorlage">3.2. PDF-Vorlage speichern</h3>
+<div class="paragraph">
+<p>Wenn du eine Adressetikettenvorlage erstellt hast, wird im Menü <strong>Einrichtung » Aufträge » Dokumente » Adressetikett</strong> über dem Bereich <strong>Einstellungen</strong> der Bereich <strong>PDF-Vorlage</strong> sichtbar. Du kannst dort pro Adressetikettenvorlage eine PDF-Vorlage speichern, um z.B. für deine Adressetiketten ein bestimmtes Layout zu speichern.</p>
+</div>
+<div class="paragraph instruction">
+<p>PDF-Vorlage speichern:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Dokumente » Adressetikett</strong>.</p>
+</li>
+<li>
+<p>Wähle die <strong>Vorlage</strong> aus der Dropdown-Liste.</p>
+</li>
+<li>
+<p>Klicke bei <strong>Upload</strong> auf <strong>Datei auswählen</strong>.</p>
+</li>
+<li>
+<p>Wähle die PDF-Datei von deinem Computer.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Nach erneutem Öffnen der Adressetikettenvorlage ist unter <strong>Vorlage</strong> der Link <strong>Vorlage anzeigen</strong> (<span class="icon"><i class="fa fa-eye" style="color:blue"></i></span>) sichtbar. Über diesen Link kannst du die PDF-Vorlage, die für diese Adressetikettenvorlage gespeichert ist, ansehen. Wenn du eine andere PDF-Vorlage speichern möchtest, lade, wie zuvor beschrieben, eine neue PDF-Datei hoch. Die bestehende PDF-Vorlage wird überschrieben.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="artikelauflistung">3.3. Artikelauflistung</h3>
+<div class="paragraph">
+<p>Die Artikelauflistung bestimmt, wie die Artikeldaten auf dem Etikett angezeigt werden. Du kannst den Typ <strong>Standard</strong> oder <strong>Individuell</strong> wählen.</p>
+</div>
+<div class="paragraph subhead">
+<p>Typ: Standard</p>
+</div>
+<div class="paragraph">
+<p>Wenn du die Option <strong>Standard</strong> wählst, musst du die Koordinaten der Artikelauflistung, die Schriftgröße und den Schriftschnitt eingeben. Du bestimmst damit die Position der gesamten Artikelauflistung auf den Etiketten. Die einzelnen Textelemente, wie z.B. Artikel-ID bzw. Varianten-Nr., Name und Menge, werden im Gegensatz zur Option <strong>Individuell</strong> jedoch automatisch positioniert.</p>
+</div>
+<div class="paragraph subhead">
+<p>Typ: Individuell</p>
+</div>
+<div class="paragraph">
+<p>Wenn du die Option <strong>Individuell</strong> wählst, werden weitere Optionen eingeblendet, für die du individuell die Positionen auf dem Etikett einstellen kannst. Gib die Koordinaten der Artikelauflistung, die Schriftgröße und den Schriftschnitt ein. Du bestimmst damit die Position der gesamten Artikelauflistung auf den Etiketten. Entscheide außerdem, welche Textelemente, d.h. <strong>Menge</strong>, <strong>Name</strong>, <strong>Artikel-ID</strong> bzw. <strong>Varianten-Nr.</strong>, <strong>Gewicht (kg)</strong>, <strong>Wert</strong>, <strong>Zolltarifnummer</strong>, <strong>Herstellerland</strong>, <strong>Lagerort</strong> und <strong>Limit</strong> auf den Etiketten angezeigt werden sollen und positioniere diese Elemente. Anhand der X-Koordinate, des Schriftschnitts und der Breite legst du fest, wie die einzelnen Elemente der Artikelauflistung aussehen sollen. Die Option <strong>Breite</strong> legt fest, bis zu welcher Textbreite (in mm) jede der Optionen angezeigt werden soll.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="adressetikett-erzeugen">3.4. Adressetikett erzeugen</h3>
+<div class="paragraph">
+<p>Nachdem du eine Vorlage für das Adressetikett erstellt und gespeichert hast, drucke das Etikett über das Menü <strong>Aufträge » Fulfillment » Adressetiketten</strong>.</p>
+</div>
+<div class="paragraph instruction">
+<p>Adressetikett erzeugen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Aufträge » Fulfillment</strong>.</p>
+</li>
+<li>
+<p>Klappe den Bereich <strong>Adressetiketten</strong> auf (<span class="icon"><i class="fa fa-plus-square-o"></i></span>).</p>
+</li>
+<li>
+<p>Nimm die Einstellungen vor. Beachte dazu die Erläuterungen in <a href="#tabelle-adressetikett-erzeugen">Tabelle 3</a>.</p>
+</li>
+<li>
+<p>Klicke auf das Zahnrad (<span class="icon"><i class="fa fa-cog"></i></span>).<br>
+→ Das Adressetikett wird in einem separaten Fenster geöffnet und kann dann gedruckt werden.</p>
+</li>
+</ol>
+</div>
+<table id="tabelle-adressetikett-erzeugen" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 3. Einstellungen im Menü <strong>Aufträge » Fulfillment</strong> im Bereich <strong>Adressetiketten</strong></caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Erläuterung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Suchfilter</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Etiketten-Vorlage</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vorlage aus der Dropdown-Liste wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftragsstatus</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Status wählen, in dem sich die Aufträge befinden, für die Adressetiketten gedruckt werden sollen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrags-ID</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eine oder mehrere Auftrags-IDs eingeben. Adressetiketten werden dann ausschließlich für die eingegebenen Aufträge generiert. Mehrere IDs kommagetrennt eingeben.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kunden-ID</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eine oder mehrere Kunden-IDs eingeben. Adressetiketten werden dann ausschließlich für die eingegebenen Kunden generiert. Mehrere IDs kommagetrennt eingeben.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Artikel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eine oder mehrere Artikel-IDs eingeben. Adressetiketten werden dann ausschließlich für die eingegebenen Artikel generiert. Mehrere IDs kommagetrennt eingeben.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Typ</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Typ aus der Dropdown-Liste wählen. Option <strong>Auftrag</strong> wählen, um Adressetiketten nur für Aufträge zu generieren. Option <strong>ALLE</strong> wählen, um Adressetiketten für alle Auftragstypen, wie z.B. auch Gutschriften und Retouren, zu generieren.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Versanddienstleister</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Versanddienstleister aus der Dropdown-Liste wählen, um Adressetiketten nur für einen Versanddienstleister zu generieren. Option <strong>ALLE</strong> wählen, um Adressetiketten für alle Versanddienslteister zu generieren.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mandant (Shop)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandant (Shop) aus der Dropdown-Liste wählen, um Adressetiketten nur für einen Mandaten zu generieren. Option <strong>ALLE</strong> wählen, um Adressetiketten für alle Mandanten zu generieren.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Lager</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lager aus der Dropdown-Liste wählen, um Adressetiketten nur für ein Lager zu generieren. Option <strong>ALLE</strong> wählen, um Adressetiketten für alle Lager zu generieren.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>starten ab Zeile</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zahl eingeben, ab welcher Zeile der Druck starten soll.<br>
+Diese Option ist hilfreich, wenn du Etikettenpapier verwendest. Wenn du z.B. beim letzten Druckvorgang nur die ersten 3 Zeilen auf einer Seite Etikettenpapier benutzt hast, kannst du den nächsten Druckvorgang ab Zeile 4 starten. Somit kannst du noch die restlichen Etiketten auf der Seite verwenden.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Sortierung</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wählen, nach welchem Erkennungsmerkmal die erzeugten Adressetiketten sortiert werden sollen. Option <strong>KEINE</strong> wählen, wenn keine spezielle Sortierung gewünscht ist.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Gruppierung</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wählen, nach welchem Kriterium die erzeugten Adressetiketten generiert und gruppiert werden sollen. Eine der folgenden Optionen wählen:<br>
+<strong>Ein Etikett pro Auftrag</strong> = Wird das Adressetikett vom Auftrag aus generiert, wird nur ein Etikett für den gesamten Auftrag erzeugt.<br>
+<strong>Ein Etikett pro Auftragsposition</strong> = Für jede Position im Auftrag wird im PDF ein Etikett erzeugt.<br>
+<strong>Ein Etikett pro Artikel</strong> = Für jeden Artikel im Auftrag wird im PDF ein Etikett erzeugt.<br>
+<strong>Ein Etikett pro Versandpaket</strong> = Für jedes Versandpaket wird im PDF ein Etikett erzeugt. Gemeint sind die <a href="/fulfillment/versand-vorbereiten#1900">Versandpakete</a> des Auftrags, wie diese im Versand-Center zu sehen sind.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Limit</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wählen, wie viele Aufträge pro Durchgang bearbeitet werden sollen.<br>
+Pro Durchgang kann höchstens das maximal einstellbare Limit an Aufträgen bearbeitet werden. Wenn die Anzahl der Aufträge, die bearbeitet werden sollen, größer ist als das höchste einstellbare Limit, muss der Prozess entsprechend oft wiederholt werden. In der Grundeinstellung ist in manchen der Untermenüs das geringste Limit eingestellt, um eine optimale Systemleistung zu gewährleisten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Aktion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ändere Auftragsstatus</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Status wählen, der den Aufträgen nach erfolgreichem Rechnungsabruf zugewiesen werden soll.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Anmerkung"></i>
+</td>
+<td class="content">
+<div class="title">Etikettendrucker verwenden</div>
+<div class="paragraph">
+<p>Die Verwendung von Etikettendruckern ist möglich. Dabei kommen meist Etikettenrollen zum Einsatz. Die dafür benötigten Etiketten kannst du im Menü <strong>Einrichtung » Aufträge » Dokumente » Adressetikett</strong> erzeugen. Gib <strong>1</strong> bei den Optionen <strong>Zeilen pro Seite</strong> und <strong>Spalten pro Seite</strong> ein. Dadurch erhältst du pro PDF-Seite ein Etikett. Die Maße des Etiketts würden in dem Fall denen der Seite entsprechen.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="einlieferungsliste">4. Einlieferungsliste generieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Im Menü <strong>Aufträge » Fulfillment</strong> im Bereich <strong>Einlieferungsliste</strong> nimmst du Einstellungen vor, mit denen du definierst, welche Pakete sich auf der anschließend zu generierenden Einlieferungsliste befinden sollen. Durch Auswahl der Suchfilter kannst du z.B. eine Einlieferungsliste für alle Aufträge, die sich im <strong>Status [6] Gerade im Versand</strong> befinden, generieren.</p>
+</div>
+<div class="paragraph instruction">
+<p>Einlieferungsliste generieren:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Aufträge » Fulfillment</strong>.</p>
+</li>
+<li>
+<p>Klappe den Bereich <strong>Einlieferungsliste</strong> auf (<span class="icon"><i class="fa fa-plus-square-o"></i></span>).</p>
+</li>
+<li>
+<p>Nimm die Einstellungen für die Suchfilter vor. Beachte dazu die Erläuterungen in <a href="#tabelle-einlieferungsliste-generieren">Tabelle 4</a>.</p>
+</li>
+<li>
+<p>Klicke auf das Zahnrad (<span class="icon"><i class="fa fa-cog"></i></span>), um die Einlieferungsliste zu generieren.<br>
+→ Eine Datei mit den Daten, die den von Ihnen gewählten Suchkriterien entsprechen, wird generiert.</p>
+</li>
+</ol>
+</div>
+<table id="tabelle-einlieferungsliste-generieren" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 4. Einstellungen im Menü <strong>Aufträge » Fulfillment</strong> im Bereich <strong>Einlieferungsliste</strong></caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Erläuterung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftragsstatus</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Status der zu suchenden Aufträge wählen. Nur Aufträge mit diesem Status werden in die Einlieferungsliste miteinbezogen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eigner</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eigner der zu suchenden Aufträge oder die Option <strong>ALLE</strong> wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Warenausgang</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mit einem Klick in das Feld wird ein Kalender eingeblendet. Datum aus dem Kalender wählen oder Datum manuell eingeben, um die Aufträge der Einlieferungsliste einzugrenzen. Aufträge werden nur in die Einlieferungsliste miteinbezogen, wenn der Warenausgang an diesem Tag gebucht wurde. Wenn kein Datum gewählt bzw. eingegeben wird, wird nach Aufträgen, in denen kein Warenausgang gebucht wurde, gesucht.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Versandart</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Versanddienstleister der zu suchenden Aufträge oder die Option <strong>ALLE</strong> wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Listennummer</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nummer der Einlieferungsliste eingeben. Diese Zahl wird auf der generierten Einlieferungsliste angezeigt. Wenn die Einlieferungsliste zum ersten Mal generiert wird, steht standardmäßig die Zahl 1 in diesem Feld. Jedes Mal, wenn eine Einlieferungsliste generiert wird, erhöht sich dieser Wert automatisch um 1.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kundennummer</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kundennummer eingeben. Diese Zahl wird auf der generierten Einlieferungsliste angezeigt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Titel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Titel für die Einlieferungsliste eingeben. Der Titel wird auf der generierten Einlieferungsliste angezeigt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name eingeben. Der Name sowie die Kontaktdaten (Anschrift, PLZ und Ort) werden auf der generierten Einlieferungsliste angezeigt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anschrift</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eigene Anschrift eingeben.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>PLZ / Ort</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PLZ und Ort eingeben.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ausgabeformat</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wählen, in welchem Format die Einlieferungsliste generiert werden soll. Zur Auswahl stehen <strong>PDF</strong> und <strong>CSV</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>

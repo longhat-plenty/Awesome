@@ -1,0 +1,1152 @@
+<aside class="plenty-anchor-navbar">
+    <div class="sticky-wrapper">
+        <div class="sticky-container" data-fn="sticky-container" data-fn-options="{ onLoadHashScrollToLink: true }">
+            <div id="toc" class="toc">
+<div id="toctitle">Inhalt</div>
+<ul class="sectlevel1">
+<li><a href="#100"><span>1.</span><span> Bei idealo registrieren</span></a></li>
+<li><a href="#150"><span>2.</span><span> idealoDE-Plugin installieren</span></a></li>
+<li><a href="#200"><span>3.</span><span> idealo in plentymarkets einrichten</span></a></li>
+<li><a href="#250"><span>4.</span><span> idealo Preisvergleich: Auftragsherkunft aktivieren</span></a></li>
+<li><a href="#300"><span>5.</span><span> idealo Preisvergleich: Artikelverfügbarkeit einstellen</span></a></li>
+<li><a href="#400"><span>6.</span><span> idealo Preisvergleich und idealo Direktkauf: Verkaufspreis festlegen</span></a></li>
+<li><a href="#500"><span>7.</span><span> idealo Preisvergleich und idealo Direktkauf: SKU manuell festlegen</span></a></li>
+<li><a href="#600"><span>8.</span><span> idealo Preisvergleich und idealo Direktkauf: Artikelexport einrichten</span></a></li>
+<li><a href="#625"><span>9.</span><span> idealo Direktkauf einrichten</span></a></li>
+<li><a href="#650"><span>10.</span><span> idealo Direktkauf: Zahlungsart idealo Direktkauf aktivieren</span></a></li>
+<li><a href="#660"><span>11.</span><span> idealo Direktkauf: Merkmale erstellen</span></a>
+<ul class="sectlevel2">
+<li><a href="#665"><span>11.1.</span><span> Merkmal für Material und Zielgruppe/Geschlecht erstellen</span></a></li>
+<li><a href="#675"><span>11.2.</span><span> Merkmal für Versandarten erstellen</span></a></li>
+<li><a href="#676"><span>11.3.</span><span> Merkmal für Kommentar zur Lieferung erstellen</span></a></li>
+<li><a href="#680"><span>11.4.</span><span> Merkmal für Energieeffizienzklasse erstellen</span></a></li>
+<li><a href="#685"><span>11.5.</span><span> Merkmal für kostenlose Rückgabe erstellen</span></a></li>
+<li><a href="#690"><span>11.6.</span><span> Merkmal für Pfand erstellen</span></a></li>
+<li><a href="#695"><span>11.7.</span><span> Merkmal für Replika erstellen</span></a></li>
+</ul>
+</li>
+<li><a href="#700"><span>12.</span><span> idealo Direktkauf: Auftragsbestätigungen automatisch senden</span></a></li>
+<li><a href="#800"><span>13.</span><span> idealo Direktkauf: Versandbestätigungen automatisch senden</span></a></li>
+<li><a href="#850"><span>14.</span><span> idealo Direktkauf: Retouren automatisch senden</span></a></li>
+<li><a href="#900"><span>15.</span><span> idealo Direktkauf: Stornierungen automatisch senden</span></a></li>
+<li><a href="#1000"><span>16.</span><span> API-Log abrufen</span></a></li>
+</ul>
+</div>
+        </div>
+    </div>
+</aside>
+
+<main id="main">
+    <h1>idealo einrichten</h1><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Auf dieser Handbuchseite findest du Informationen zur Einrichtung des Preisvergleichportals und Marktplatzes idealo in plentymarkets. Du erfährst, wie du die Schnittstelle einrichtest, deine Artikel zu idealo exportierst und Verkaufspreise festlegst.<br></p>
+</div>
+<div class="paragraph subhead">
+<p>idealo Preisvergleich und idealo Direktkauf</p>
+</div>
+<div class="paragraph">
+<p>Mit plentymarkets können sowohl der idealo Preisvergleich als auch idealo Direktkauf genutzt werden. Mit idealo Direktkauf können Kund*innen deine Produkte direkt bei idealo kaufen, ohne in deinen Webshop zu wechseln.<br></p>
+</div>
+<div class="paragraph">
+<p>Du benötigst das idealoDE-Plugin, um den idealo Preisvergleich und idealo Direktkauf nutzen zu können.</p>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="100">1. Bei idealo registrieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bevor du idealo in plentymarkets einrichtest, musst du dich bei <a href="https://partner.idealo.com/de/" target="_blank" rel="noopener">idealo</a> registrieren.</p>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="150">2. idealoDE-Plugin installieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Daten werden über den Elastischen Export automatisch zu idealo übertragen. Damit du Artikeldaten automatisch an idealo übertragen kannst, installiere zunächst das Plugin <a href="https://marketplace.plentymarkets.com/plugins/markets/ElasticExport_4763" target="_blank" rel="noopener">Elastischer Export</a> und das <a href="https://marketplace.plentymarkets.com/plugins/markets/ElasticExportIdealoDE_4723" target="_blank" rel="noopener">idealoDE-Plugin</a> aus dem <a href="https://marketplace.plentymarkets.com/plugins/markets" target="_blank" rel="noopener">plentyMarketplace</a>.<br></p>
+</div>
+<div class="paragraph">
+<p>Die Installation des Plugins ist sowohl für den idealo Preisvergleich als auch für idealo Direktkauf erforderlich.<br></p>
+</div>
+<div class="paragraph">
+<p>Die Installation des idealoDE-Plugins stellt folgende Prozesse bereit:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>automatische Datenübertragung zu idealo über den elastischen Export</p>
+</li>
+</ul>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="200">3. idealo in plentymarkets einrichten</h2>
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Wichtig"></i>
+</td>
+<td class="content">
+<div class="title">idealo Produkt-CSV prüfen</div>
+<div class="paragraph">
+<p>Zurzeit sind in plentymarkets nicht alle Spalten der idealo Produkt-CSV verfügbar. Prüfe vor der Einrichtung, ob du Produktspalten benötigst, die in plentymarkets noch nicht verfügbar sind. In diesem Fall ist die Einrichtung von idealo noch nicht möglich.<br>
+Eine Übersicht der in plentymarkets verfügbaren Spalten erhältst du im <a href="https://marketplace.plentymarkets.com/plugins/channels/preisportale/elasticexportidealode_4723" target="_blank" rel="noopener">idealo-Plugin User Guide</a>.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>Nimm die folgenden Einstellungen in plentymarkets vor, um den automatischen stündlichen Auftragsimport von idealo zu aktivieren. Diese Einstellung ist sowohl für den idealo Preisvergleich als auch für idealo Direktkauf erforderlich.</p>
+</div>
+<div class="paragraph instruction">
+<p>Auftragsimport aktivieren:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Märkte » idealo</strong>.</p>
+</li>
+<li>
+<p>Setze ein Häkchen bei <strong>Automatischen Datenaustausch aktivieren</strong>.</p>
+</li>
+<li>
+<p>Gib den API-Schlüssel ein, wie von idealo erhalten.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="250">4. idealo Preisvergleich: Auftragsherkunft aktivieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Damit du Artikel, Merkmale etc. mit dem idealo Preisvergleich verknüpfen kannst, muss im Menü <strong>Einrichtung » Aufträge » Auftragsherkunft</strong> die Auftragsherkunft <strong>idealo</strong> aktiviert werden.<br></p>
+</div>
+<div class="paragraph instruction">
+<p>Auftragsherkunft für idealo Preisvergleich aktivieren:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Auftragsherkunft</strong>.</p>
+</li>
+<li>
+<p>Setze bei <strong>idealo</strong> ein Häkchen.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Wenn du <strong>idealo Direktkauf</strong> nutzen möchtest, aktiviere zusätzlich die Auftragsherkunft <strong>idealo Direktkauf</strong> wie im Kapitel <a href="#625">idealo Direktkauf einrichten</a> beschrieben.</p>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="300">5. idealo Preisvergleich: Artikelverfügbarkeit einstellen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Artikel, die du auf idealo verkaufen möchtest, müssen im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten-ID</strong> im Tab <strong>Verfügbarkeit</strong> aktiviert werden. Stelle die Artikelverfügbarkeit für idealo ein wie im Folgenden beschrieben.</p>
+</div>
+<div class="paragraph instruction">
+<p>Artikelverfügbarkeit für idealo Preisvergleich einstellen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten-ID » Tab: Einstellungen</strong>.</p>
+</li>
+<li>
+<p>Aktiviere die Hauptvariante im Bereich <strong>Verfügbarkeit</strong>.</p>
+</li>
+<li>
+<p>Wechsele in das Tab <strong>Verfügbarkeit</strong>.</p>
+</li>
+<li>
+<p>Klicke im Bereich <strong>Märkte</strong> in das Auswahlfeld.<br>
+→ Eine Liste mit allen verfügbaren Märkten wird angezeigt.</p>
+</li>
+<li>
+<p>Aktiviere die Option <strong>idealo</strong>.</p>
+</li>
+<li>
+<p>Aktiviere die Option <strong>Web-API</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Hinzufügen</strong> (<span class="icon"><i class="fa fa-plus-square" style="color:green"></i></span>).<br>
+→ Der Marktplatz wird hinzugefügt.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Die Verfügbarkeit für Varianten kann im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten » Variante öffnen » Tab: Varianten-ID » Tab: Verfügbarkeit</strong> angepasst werden.<br></p>
+</div>
+<div class="paragraph">
+<p>Wenn du <strong>idealo Direktkauf</strong> nutzen möchtest, aktiviere im Bereich <strong>Märkte</strong> zusätzlich die Option <strong>idealo Direktkauf</strong> wie im Kapitel <a href="#625">idealo Direktkauf einrichten</a> beschrieben.</p>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="400">6. idealo Preisvergleich und idealo Direktkauf: Verkaufspreis festlegen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Gehe wie im Folgenden beschrieben vor, um für die Auftragsherkunft idealo einen Verkaufspreis festzulegen. Dieser Preis wird auf idealo angezeigt und ist für den idealo Preisvergleich und idealo Direktkauf gültig.</p>
+</div>
+<div class="paragraph instruction">
+<p>Verkaufspreis für idealo festlegen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Artikel » Verkaufspreise » Verkaufspreis öffnen » Tab: Einstellungen</strong>.</p>
+</li>
+<li>
+<p>Setze ein Häkchen bei der Herkunft <strong>idealo</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="500">7. idealo Preisvergleich und idealo Direktkauf: SKU manuell festlegen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten-ID</strong> im Tab <strong>Verfügbarkeit</strong> fügst du, wenn nötig, marktplatzspezifische SKUs hinzu.</p>
+</div>
+<div class="paragraph instruction">
+<p>SKU hinzufügen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten-ID » Tab: Einstellungen</strong>.</p>
+</li>
+<li>
+<p>Wechsele in das Tab <strong>Verfügbarkeit</strong>.</p>
+</li>
+<li>
+<p>Klicke im Bereich <strong>SKU</strong> auf <strong>Hinzufügen</strong> (<span class="icon"><i class="fa fa-plus-square" style="color:green"></i></span>).<br>
+→ Das Bearbeitungsfenster <strong>Neue SKU</strong> wird angezeigt.</p>
+</li>
+<li>
+<p>Wähle die Herkunft <strong>idealo</strong>.</p>
+</li>
+<li>
+<p>Gib die SKU ein.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Hinzufügen</strong> (<span class="icon"><i class="fa fa-plus-square" style="color:green"></i></span>).<br>
+→ Die SKU wird gespeichert und angezeigt.</p>
+</li>
+</ol>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="600">8. idealo Preisvergleich und idealo Direktkauf: Artikelexport einrichten</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Artikel werden über den elastischen Export mit dem Datenformat IdealoDE zu idealo exportiert. Dafür müssen zuvor die Plugins <strong>ElasticExport</strong> und <strong>ElasticExportIdealoDE</strong> installiert worden sein. Lege zunächst das Datenformat IdealoDE an und übermittele im Anschluss die URL zu idealo.<br></p>
+</div>
+<div class="paragraph">
+<p>Die Einrichtung des Artikelexports ist sowohl für den idealo Preisvergleich als auch für idealo Direktkauf erforderlich.</p>
+</div>
+<div class="paragraph instruction">
+<p>Artikelexport einrichten:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Daten » Elastischer Export</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Neuer Export</strong>.</p>
+</li>
+<li>
+<p>Nimm die Einstellungen vor. Beachte dazu die Erläuterungen in <a href="#einstellungen-artikelexport">Tabelle 1</a>.</p>
+</li>
+<li>
+<p>Nimm die weiteren Einstellungen für Artikelfilter und Formateinstellungen vor. Beachte dazu die Erläuterungen in Tabelle 2 auf der Handbuchseite <a href="/daten/daten-exportieren/elastischer-export#300">Elastischer Export</a>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.<br>
+→ Eine ID für das Exportformat wird vergeben und das Exportformat erscheint in der Übersicht <strong>Exporte</strong>.</p>
+</li>
+</ol>
+</div>
+<table id="einstellungen-artikelexport" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 1. Einstellungen für Artikelexport</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Erläuterung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Einstellungen</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name eingeben. Unter diesem Namen erscheint das Exportformat in der Übersicht im Tab <strong>Exporte</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Typ</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Typ <strong>Artikel</strong> aus der Dropdown-Liste wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Format</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Format <strong>IdealoDE</strong> aus der Dropdown-Liste wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Limit</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zahl eingeben. Wenn mehr als 10000 Datensätze an idealo übertragen werden sollen, wird die Ausgabedatei für 24 Stunden nicht noch einmal neu generiert, um Ressourcen zu sparen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Bereitstellung</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URL</strong> wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Token</strong>,<br>
+<strong>URL</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wenn unter <strong>Bereitstellung</strong> die Option <strong>URL</strong> gewählt wurde, auf <strong>Token generieren</strong> klicken. Der Token wird dann automatisch eingetragen. Die URL wird automatisch eingetragen, wenn unter <strong>Token</strong> der Token generiert wurde. Diese URL an idealo übergeben, damit die Artikel exportiert werden.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="sect1">
+<h2 id="625">9. idealo Direktkauf einrichten</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Mit idealo Direktkauf können Kund*innen deine Produkte direkt bei idealo kaufen, ohne in deinen Webshop zu wechseln. In den folgenden Kapiteln wird erklärt, welche Einstellungen du vornehmen musst, um idealo Direktkauf in plentymarkets nutzen zu können.<br></p>
+</div>
+<div class="paragraph">
+<p>Aktiviere die Auftragsherkunft <strong>idealo Direktkauf</strong> und stelle die Artikelverfügbarkeit für <strong>idealo Direktkauf</strong> ein, um idealo Direktkauf nutzen zu können.</p>
+</div>
+<div class="paragraph instruction">
+<p>Auftragsherkunft für idealo Direktkauf aktivieren:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Auftragsherkunft</strong>.</p>
+</li>
+<li>
+<p>Setze ein Häkchen bei <strong>idealo Direktkauf</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Wenn du die Auftragsherkunft <strong>idealo Direktkauf</strong> aktivierst, wird in der über den Elastischen Export generierten Datei die Spalte <strong>checkout_approved</strong> auf <strong>true</strong> gesetzt.</p>
+</div>
+<div class="paragraph instruction">
+<p>Artikelverfügbarkeit für idealo Direktkauf einstellen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten-ID » Tab: Einstellungen</strong>.</p>
+</li>
+<li>
+<p>Aktiviere die Hauptvariante im Bereich <strong>Verfügbarkeit</strong>.</p>
+</li>
+<li>
+<p>Wechsele in das Tab <strong>Verfügbarkeit</strong>.</p>
+</li>
+<li>
+<p>Klicke im Bereich <strong>Märkte</strong> in das Auswahlfeld.<br>
+→ Eine Liste mit allen verfügbaren Märkten wird angezeigt.</p>
+</li>
+<li>
+<p>Aktiviere die Option <strong>idealo Direktkauf</strong>.</p>
+</li>
+<li>
+<p>Stelle sicher, dass die Option <strong>Web-API</strong> aktiviert ist.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Hinzufügen</strong> (<span class="icon"><i class="fa fa-plus-square" style="color:green"></i></span>).<br>
+→ Der Marktplatz wird hinzugefügt.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Die Verfügbarkeit für Varianten kann im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten » Variante öffnen » Tab: Varianten-ID » Tab: Verfügbarkeit</strong> angepasst werden.</p>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="650">10. idealo Direktkauf: Zahlungsart <strong>idealo Direktkauf</strong> aktivieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Damit Zahlungen für Aufträge von idealo Direktkauf durchgeführt und in deinem plentymarkets System angezeigt werden, aktiviere die Zahlungsart <strong>idealo Direktkauf</strong>.</p>
+</div>
+<div class="paragraph instruction">
+<p>idealo-Zahlungsart aktivieren:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Zahlung » Zahlungsarten</strong>.</p>
+</li>
+<li>
+<p>Aktiviere die Einstellung <strong>Auch inaktive zeigen</strong>.</p>
+</li>
+<li>
+<p>Öffne den Ordner <strong>DE &gt; idealo</strong>.</p>
+</li>
+<li>
+<p>Wähle die idealo-Zahlungsart.<br>
+→ Das Tab <strong>Einstellungen</strong> wird geöffnet.</p>
+</li>
+<li>
+<p>Nimm die Einstellungen vor. Beachten Sie dazu die Erläuterungen in <a href="#einstellungen-zahlungsart">Tabelle 2</a>.</p>
+</li>
+<li>
+<p>Setze ein Häkchen bei der Option <strong>Aktiv</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<table id="einstellungen-zahlungsart" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 2. Einstellungen der Zahlungsart</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Erläuterung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Sprache</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Folgende Optionen werden sprachabhängig gespeichert: <strong>Name</strong>, <strong>Infoseite</strong>, <strong>Infoseite (Intern)</strong>, <strong>Logo</strong> und <strong>Logo hochladen</strong>. Damit hast du die Möglichkeit, die Werte für diese Optionen in mehreren Sprachen einzugeben. Die Werte einer Sprache werden aktiviert, wenn ein Käufer im Webshop die Sprache wählt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name eintragen, der im Webshop und auf Rechnungen etc. angezeigt werden soll.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Infoseite</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Als Information zur Zahlungsart eine Kategorieseite vom Typ <strong>Content</strong> oder die URL einer Webseite eintragen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Infoseite (Extern)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wenn unter <strong>Infoseite</strong> die Einstellung <strong>Infoseite (Extern)</strong> gewählt wurde, hier die URL der Infoseite eintragen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Lieferländer</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kein Lieferland wählen.<br>
+Du kannst die Zahlungsart nicht in deinem Webshop verwenden. Deshalb wird diese Zahlungsart in plentymarkets nur aktiviert, aber nicht vollständig eingerichtet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Logo</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eine der folgenden Optionen für die Anzeige eines Logos wählen:<br>
+<strong>Standard-Logo anzeigen</strong> = Das in plentymarkets für die Zahlungsart eingestellte Logo wird angezeigt.<br>
+<strong>Kein Logo anzeigen</strong> = Das in plentymarkets für die Zahlungsart eingestellte Logo wird nicht angezeigt.<br>
+<strong>Upload-Logo anzeigen</strong> = Blendet die Optionen <strong>Logoansicht</strong> und <strong>Logo hochladen</strong> ein.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Logoansicht</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wenn unter <strong>Logo</strong> die Option <strong>Upload-Logo anzeigen</strong> gewählt wurde, wird das hochgeladene Logo hier angezeigt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Logo hochladen</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wenn unter <strong>Logo</strong> die Option <strong>Upload-Logo anzeigen</strong> gewählt wurde, hier ein externes Logo hochladen.<br>
+Auf <strong>Dateien hochladen</strong> klicken und das Logo wählen, das für die Zahlungsart hochgeladen werden soll. Erlaubte Datenformate: GIF, PNG und JPG.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Priorität</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Priorität für die Anzeige der Zahlungsart im Webshop wählen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kosten: Pauschal oder Prozentual</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wenn bei der Zahlungsart zusätzliche Kosten berechnet werden, den Prozentwert oder Pauschalwert gemäß der Vertragskonditionen eintragen. <strong>Wichtig</strong>: Nicht in beide Felder einen Wert eintragen.<br>
+Weitere Informationen findest du auf der Handbuchseite <a href="#basics/statistik/statistiken-verwalten">Statistiken verwalten</a>. Ein Beispiel für pauschale und prozentuale Kosten findest du auf der Handbuchseite <a href="/payment/zahlungsarten-verwalten#20">Grundeinstellungen</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="Hinweis"></i>
+</td>
+<td class="content">
+<div class="title">Zahlungsart in Kundenklassen erlauben</div>
+<div class="paragraph">
+<p>Im Menü <strong>Einrichtung » CRM » Kundenklassen</strong> aktivieren oder deaktivieren Sie <strong>erlaubte Zahlungsarten</strong>.<br>
+Weitere Informationen findest du im Kapitel <a href="/payment/zahlungsarten-verwalten#30">Zahlungsart in Kundenklasse erlauben</a>.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>Weitere Informationen findest du auf der Handbuchseite <a href="/payment/zahlungsarten-verwalten">Zahlungsarten verwalten</a>.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Wichtig"></i>
+</td>
+<td class="content">
+<div class="title">Zahlungsart PayPal</div>
+<div class="paragraph">
+<p>Wenn du PayPal als Zahlungsart anbietest, muss die Zahlungsart PayPal zwingend in deinem plentymarkets System hinterlegt und eingerichtet sein, damit die Zahlung korrekt importiert und dem Auftrag zugeordnet werden kann.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="660">11. idealo Direktkauf: Merkmale erstellen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Mit <a href="/artikel/artikel-verwalten#480">Merkmalen</a> verknüpfst du bestimmte Eigenschaften, die du für die Einrichtung des Marktplatzes idealo Direktkauf benötigst, mit deinen Artikeln. Mit Merkmalen überträgst du Artikeleigenschaften, Versandarten und Gebühren an idealo Direktkauf.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Wichtig"></i>
+</td>
+<td class="content">
+<div class="title">Merkmale können nur mit Plugin-Version 2.0 verwendet werden</div>
+<div class="paragraph">
+<p>Die Merkmale <strong>DeliveryComment</strong>, <strong>DepositFee</strong>, <strong>DisposalPrice</strong>, <strong>EnergyClass</strong>, <strong>FreeReturnDays</strong>, <strong>Gender</strong>, <strong>Material</strong> und <strong>Replica</strong> können verwendet werden, sobald die idealo-Plugin-Version 2.0 verfügbar und in deinem plentymarkets System installiert ist.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect2">
+<h3 id="665">11.1. Merkmal für Material und Zielgruppe/Geschlecht erstellen</h3>
+<div class="paragraph">
+<p>Mit den Merkmalen <strong>Material</strong> und <strong>Gender</strong> überträgst du Informationen zu Material und Zielgruppe bzw. Geschlecht an idealo Direktkauf.<br></p>
+</div>
+<div class="paragraph">
+<p>Im Folgenden wird beschrieben, wie du das Merkmal <strong>Material</strong> erstellst. Erstelle das Merkmal <strong>Gender</strong> auf die gleiche Weise, wähle jedoch den Merkmaltyp <strong>Text</strong>.</p>
+</div>
+<div class="paragraph instruction">
+<p>Merkmal für Material einrichten:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Artikel » Merkmale » Tab: Neues Merkmal</strong>.</p>
+</li>
+<li>
+<p>Gib den <strong>Namen (intern)</strong> ein.</p>
+</li>
+<li>
+<p>Wähle als Merkmaltyp <strong>kein</strong> aus der Dropdown-Liste.</p>
+</li>
+<li>
+<p>Wähle bei <strong>idealo Direktkauf-Merkmal</strong> das Merkmal <strong>Material</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Variante öffnen » Tab: Merkmale</strong> verknüpfst du anschließend das Merkmal mit dem Artikel.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="675">11.2. Merkmal für Versandarten erstellen</h3>
+<div class="paragraph">
+<p>Wenn du idealo Direktkauf nutzt, findet der Verkauf direkt bei idealo statt und du musst Informationen zur Versandart an idealo Direktkauf übergeben. Versendest du deine Artikel mit einem Paketdienst, einer Spedition, per Brief oder Download, wird diese Pflichtinformation mit einem Merkmal angegeben und an idealo Direktkauf übergeben. Bei der Versandart Spedition wird beim Verkauf des Artikels die Telefonnummer des Käufers zur Abstimmung eines Liefertermins mit dem beauftragten Speditionsunternehmen erfragt.<br></p>
+</div>
+<div class="paragraph">
+<p>Gehe wie im Folgenden beschrieben vor, um das Merkmal <strong>FulfillmentType</strong> anzulegen, mit dem du angibst, ob du die Versandart <strong>Spedition</strong>, <strong>Paketdienst</strong>, <strong>Brief</strong> oder <strong>Download</strong> verwendest.</p>
+</div>
+<div class="paragraph instruction">
+<p>Merkmal für Versandart erstellen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Artikel » Merkmale » Tab: Neues Merkmal</strong>.</p>
+</li>
+<li>
+<p>Gib den <strong>Namen (intern)</strong> ein.</p>
+</li>
+<li>
+<p>Wähle als Merkmaltyp <strong>kein</strong> aus der Dropdown-Liste.</p>
+</li>
+<li>
+<p>Wähle bei <strong>idealo Direktkauf-Merkmal</strong> das Merkmal <strong>FulfillmentType</strong>.<br>
+→ Eine Dropdown-Liste erscheint.</p>
+</li>
+<li>
+<p>Wähle je nach Versandart einen Wert aus der Dropdown-Liste. Die Werte <strong>Spedition</strong>, <strong>Paketdienst</strong>, <strong>Brief</strong> und <strong>Download</strong> sind verfügbar.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Variante öffnen » Tab: Merkmale</strong> verknüpfst du anschließend das Merkmal mit dem Artikel.</p>
+</div>
+<div class="paragraph subhead">
+<p>Weitere Merkmale für Versandarten</p>
+</div>
+<div class="paragraph">
+<p>Für Artikel mit der Versandart Spedition kann die zusätzliche Dienstleistung <strong>Zwei-Mann-Lieferung bis zum Aufstellort</strong> und <strong>Altgeräteabholung</strong> als Merkmal an idealo Direktkauf übergeben werden. Die Altgeräteabholung kann nur in Kombination mit der Zwei-Mann-Lieferung übergeben werden. Das heißt, du musst sowohl das Merkmal <strong>Zwei-Mann-Lieferung</strong> (<strong>twoManHandlingPrice</strong>) als auch das Merkmal <strong>Altgeräteabholung</strong> (<strong>DisposalPrice</strong>) anlegen und beide mit dem Artikel verknüpfen. Wähle in beiden Fällen als Merkmaltyp <strong>Kommazahl</strong>. Gib den Aufpreis am Artikel für die zusätzliche Dienstleistung mit zwei Dezimalstellen und mit Punkt als Dezimaltrenner (19.99) im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Variante öffnen » Tab: Merkmale</strong> ein.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="676">11.3. Merkmal für Kommentar zur Lieferung erstellen</h3>
+<div class="paragraph">
+<p>Mit dem Merkmal <strong>DeliveryComment</strong> werden weitere Informationen zur Lieferung übermittelt.<br></p>
+</div>
+<div class="paragraph">
+<p>Gehe wie im Folgenden beschrieben vor, um das Merkmal <strong>DeliveryComment</strong> zu erstellen.</p>
+</div>
+<div class="paragraph instruction">
+<p>Merkmal für Kommentar zur Lieferung erstellen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Artikel » Merkmale » Tab: Neues Merkmal</strong>.</p>
+</li>
+<li>
+<p>Gib den <strong>Namen (intern)</strong> ein.</p>
+</li>
+<li>
+<p>Wähle als Merkmaltyp <strong>Text</strong> aus der Dropdown-Liste.</p>
+</li>
+<li>
+<p>Wähle bei <strong>idealo Direktkauf-Merkmal</strong> das Merkmal <strong>DeliveryComment</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Variante öffnen » Tab: Merkmale</strong> verknüpfst du anschließend das Merkmal mit dem Artikel.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="680">11.4. Merkmal für Energieeffizienzklasse erstellen</h3>
+<div class="paragraph">
+<p>Mit dem Merkmal <strong>EnergyClass</strong> überträgst du Informationen zur Energieeffizienzklasse an idealo Direktkauf.<br></p>
+</div>
+<div class="paragraph">
+<p>Gehe wie im Folgenden beschrieben vor, um das Merkmal <strong>EnergyClass</strong> zu erstellen.</p>
+</div>
+<div class="paragraph instruction">
+<p>Merkmal für Energieeffizienzklasse einrichten:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Artikel » Merkmale » Tab: Neues Merkmal</strong>.</p>
+</li>
+<li>
+<p>Gib den <strong>Namen (intern)</strong> ein.</p>
+</li>
+<li>
+<p>Wähle als Merkmaltyp <strong>kein</strong> aus der Dropdown-Liste.</p>
+</li>
+<li>
+<p>Wähle bei <strong>idealo Direktkauf-Merkmal</strong> das Merkmal <strong>EnergyClass</strong>.<br>
+→ Eine Dropdown-Liste erscheint.</p>
+</li>
+<li>
+<p>Wähle je nach Energieeffizienzklasse einen Wert aus der Dropdown-Liste.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Variante öffnen » Tab: Merkmale</strong> verknüpfst du anschließend das Merkmal mit dem Artikel.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="685">11.5. Merkmal für kostenlose Rückgabe erstellen</h3>
+<div class="paragraph">
+<p>Mit dem Merkmal <strong>FreeReturnDays</strong> überträgst du Informationen zur kostenlosen Rückgabefrist, d.h. die Frist, innerhalb der ein Artikel kostenlos zurückgegeben werden kann, an idealo Direktkauf.<br></p>
+</div>
+<div class="paragraph">
+<p>Gehe wie im Folgenden beschrieben vor, um das Merkmal <strong>FreeReturnDays</strong> zu erstellen.</p>
+</div>
+<div class="paragraph instruction">
+<p>Merkmal für kostenlose Rückgabefrist einrichten:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Artikel » Merkmale » Tab: Neues Merkmal</strong>.</p>
+</li>
+<li>
+<p>Gib den <strong>Namen (intern)</strong> ein.</p>
+</li>
+<li>
+<p>Wähle als Merkmaltyp <strong>ganze Zahl</strong> aus der Dropdown-Liste.</p>
+</li>
+<li>
+<p>Wähle bei <strong>idealo Direktkauf-Merkmal</strong> das Merkmal <strong>FreeReturnDays</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Variante öffnen » Tab: Merkmale</strong> verknüpfst anschließend das Merkmal mit dem Artikel.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="690">11.6. Merkmal für Pfand erstellen</h3>
+<div class="paragraph">
+<p>Mit dem Merkmal <strong>DepositFee</strong> überträgst du Informationen zum Pfand an idealo Direktkauf. Dieses Merkmal wird benötigt, wenn für einen Artikel Pfand gezahlt werden muss.<br></p>
+</div>
+<div class="paragraph">
+<p>Gehe wie im Folgenden beschrieben vor, um das Merkmal <strong>DepositFee</strong> zu erstellen.</p>
+</div>
+<div class="paragraph instruction">
+<p>Merkmal für Pfand einrichten:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Artikel » Merkmale » Tab: Neues Merkmal</strong>.</p>
+</li>
+<li>
+<p>Gib den <strong>Namen (intern)</strong> ein.</p>
+</li>
+<li>
+<p>Wähle als Merkmaltyp <strong>Kommazahl</strong> aus der Dropdown-Liste.</p>
+</li>
+<li>
+<p>Wähle bei <strong>idealo Direktkauf-Merkmal</strong> das Merkmal <strong>DepositFee</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Variante öffnen » Tab: Merkmale</strong> verknüpfst du anschließend das Merkmal mit dem Artikel.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="695">11.7. Merkmal für Replika erstellen</h3>
+<div class="paragraph">
+<p>Mit dem Merkmal <strong>Replica</strong> gibst du an, ob es sich bei dem Artikel um eine Replika handelt.<br></p>
+</div>
+<div class="paragraph">
+<p>Gehe wie im Folgenden beschrieben vor, um das Merkmal <strong>Replica</strong> zu erstellen.</p>
+</div>
+<div class="paragraph instruction">
+<p>Merkmal für Replika einrichten:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Artikel » Merkmale » Tab: Neues Merkmal</strong>.</p>
+</li>
+<li>
+<p>Gib den <strong>Namen (intern)</strong> ein.</p>
+</li>
+<li>
+<p>Wähle als Merkmaltyp <strong>kein</strong> aus der Dropdown-Liste.</p>
+</li>
+<li>
+<p>Wähle bei <strong>idealo Direktkauf-Merkmal</strong> das Merkmal <strong>Replica</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Im Menü <strong>Artikel » Artikel bearbeiten » Artikel öffnen » Variante öffnen » Tab: Merkmale</strong> verknüpfst du anschließend das Merkmal mit dem Artikel.</p>
+</div>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="700">12. idealo Direktkauf: Auftragsbestätigungen automatisch senden</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Richte eine <a href="/automatisierung/ereignisaktionen">Ereignisaktion</a> ein, um nach Eingang eines Auftrags automatisch eine Auftragsbestätigung an idealo zu senden.</p>
+</div>
+<div class="openblock collapseBox">
+<div class="title">Ereignisaktion einrichten</div>
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Ereignisse</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Ereignisaktion hinzufügen</strong> (<span class="icon"><i class="fa fa-plus-square" style="color:green"></i></span>).<br>
+→ Das Fenster <strong>Neue Ereignisaktion erstellen</strong> wird geöffnet.</p>
+</li>
+<li>
+<p>Gib einen Namen ein.</p>
+</li>
+<li>
+<p>Wähle das <strong>Ereignis</strong> gemäß <a href="#ereignisaktion-auftragsbestätigung-idealo">Tabelle 3</a>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.<br>
+→ Das Ereignis wird erstellt.</p>
+</li>
+<li>
+<p>Nimm die weiteren Einstellungen gemäß <a href="#ereignisaktion-auftragsbestätigung-idealo">Tabelle 3</a> vor.</p>
+</li>
+<li>
+<p>Setze ein Häkchen bei <strong>Aktiv</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.<br>
+→ Die Ereignisaktion wird gespeichert.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<table id="ereignisaktion-auftragsbestätigung-idealo" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 3. Ereignisaktion zum automatischen Senden von Auftragsbestätigungen an idealo</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 42.8571%;">
+<col style="width: 42.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Option</th>
+<th class="tableblock halign-left valign-top">Auswahl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ereignis</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftragsanlage: Neuer Auftrag</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filter 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag &gt; Auftragstyp</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filter 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag &gt; Herkunft</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idealo Direktkauf</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Aktion</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag &gt; Auftragsbestätigung an idealo senden</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="sect1">
+<h2 id="800">13. idealo Direktkauf: Versandbestätigungen automatisch senden</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Richte eine <a href="/automatisierung/ereignisaktionen">Ereignisaktion</a> ein, um automatisch eine Versandbestätigung an idealo zu senden, nachdem ein Warenausgang gebucht wurde.</p>
+</div>
+<div class="openblock collapseBox">
+<div class="title">Ereignisaktion einrichten</div>
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Ereignisse</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Ereignisaktion hinzufügen</strong> (<span class="icon"><i class="fa fa-plus-square" style="color:green"></i></span>).<br>
+→ Das Fenster <strong>Neue Ereignisaktion erstellen</strong> wird geöffnet.</p>
+</li>
+<li>
+<p>Gib einen Namen ein.</p>
+</li>
+<li>
+<p>Wähle das <strong>Ereignis</strong> gemäß <a href="#ereignisaktion-versandbestätigung-idealo">Tabelle 4</a>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.<br>
+→ Das Ereignis wird erstellt.</p>
+</li>
+<li>
+<p>Nimm die weiteren Einstellungen gemäß <a href="#ereignisaktion-versandbestätigung-idealo">Tabelle 4</a> vor.</p>
+</li>
+<li>
+<p>Setze ein Häkchen bei <strong>Aktiv</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.<br>
+→ Die Ereignisaktion wird gespeichert.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<table id="ereignisaktion-versandbestätigung-idealo" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 4. Ereignisaktion zum automatischen Senden von Versandbestätigungen an idealo</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 42.8571%;">
+<col style="width: 42.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Option</th>
+<th class="tableblock halign-left valign-top">Auswahl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ereignis</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftragsänderung: Warenausgang gebucht</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filter 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag &gt; Auftragstyp</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filter 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag &gt; Herkunft</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idealo Direktkauf</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Aktion</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Versand &gt; Versandbestätigung an idealo senden</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="sect1">
+<h2 id="850">14. idealo Direktkauf: Retouren automatisch senden</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Richte eine <a href="/automatisierung/ereignisaktionen">Ereignisaktion</a> ein, um idealo automatisch über Retouren zu informieren.</p>
+</div>
+<div class="openblock collapseBox">
+<div class="title">Ereignisaktion einrichten</div>
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Ereignisse</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Ereignisaktion hinzufügen</strong> (<span class="icon"><i class="fa fa-plus-square" style="color:green"></i></span>).<br>
+→ Das Fenster <strong>Neue Ereignisaktion erstellen</strong> wird geöffnet.</p>
+</li>
+<li>
+<p>Gib einen Namen ein.</p>
+</li>
+<li>
+<p>Wähle das <strong>Ereignis</strong> gemäß <a href="#ereignisaktion-retouren-idealo">Tabelle 5</a>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.<br>
+→ Das Ereignis wird erstellt.</p>
+</li>
+<li>
+<p>Nimm die weiteren Einstellungen gemäß <a href="#ereignisaktion-retouren-idealo">Tabelle 5</a> vor.</p>
+</li>
+<li>
+<p>Setze ein Häkchen bei <strong>Aktiv</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.<br>
+→ Die Ereignisaktion wird gespeichert.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<table id="ereignisaktion-retouren-idealo" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 5. Ereignisaktion zum automatischen Senden von Retouren an idealo</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 42.8571%;">
+<col style="width: 42.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Option</th>
+<th class="tableblock halign-left valign-top">Auswahl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ereignis</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftragsanlage: Neue Retoure</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filter 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag &gt; Auftragstyp</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Retoure</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filter 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag &gt; Herkunft</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idealo Direktkauf</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Aktion</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Retoure &gt; Retoure an idealo senden</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="sect1">
+<h2 id="900">15. idealo Direktkauf: Stornierungen automatisch senden</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Richte eine <a href="/automatisierung/ereignisaktionen">Ereignisaktion</a> ein, um idealo automatisch über Stornierungen zu informieren.</p>
+</div>
+<div class="openblock collapseBox">
+<div class="title">Ereignisaktion einrichten</div>
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Ereignisse</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Ereignisaktion hinzufügen</strong> (<span class="icon"><i class="fa fa-plus-square" style="color:green"></i></span>).<br>
+→ Das Fenster <strong>Neue Ereignisaktion erstellen</strong> wird geöffnet.</p>
+</li>
+<li>
+<p>Gib einen Namen ein.</p>
+</li>
+<li>
+<p>Wähle das <strong>Ereignis</strong> gemäß <a href="#ereignisaktion-stornierungen-idealo">Tabelle 6</a>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.<br>
+→ Das Ereignis wird erstellt.</p>
+</li>
+<li>
+<p>Nimm die weiteren Einstellungen gemäß <a href="#ereignisaktion-stornierungen-idealo">Tabelle 6</a> vor.</p>
+</li>
+<li>
+<p>Wähle einen <strong>Grund</strong> für die Stornierung.</p>
+</li>
+<li>
+<p>Setze ein Häkchen bei <strong>Aktiv</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> (<span class="icon"><i class="fa fa-save" style="color:green"></i></span>) die Einstellungen.<br>
+→ Die Ereignisaktion wird gespeichert.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<table id="ereignisaktion-stornierungen-idealo" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 6. Ereignisaktion zum automatischen Senden von Stornierungen an idealo</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 42.8571%;">
+<col style="width: 42.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Option</th>
+<th class="tableblock halign-left valign-top">Auswahl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ereignis</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Statuswechsel: [8] Storniert</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filter 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag &gt; Auftragstyp</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filter 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag &gt; Herkunft</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idealo Direktkauf</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Aktion</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag &gt; Stornierung an idealo senden</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="sect1">
+<h2 id="1000">16. API-Log abrufen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Im Menü <strong>Daten » API-Log</strong> findest du eine Historie über Vorgänge, die über die idealo-Schnittstelle ausgeführt wurden. Das Format <strong>idealoDirektkauf</strong> steht dir für idealo zur Verfügung.</p>
+</div>
+<div class="paragraph instruction">
+<p>API-Log abrufen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Daten » API-Log » Tab: API-Log</strong>.</p>
+</li>
+<li>
+<p>Wähle das Format <strong>idealoDirektkauf</strong> aus der Dropdown-Liste <strong>Vorgang</strong>.</p>
+</li>
+<li>
+<p>Wähle ggf. ein Datum, um nur Einträge eines bestimmten Tages zu erhalten.</p>
+</li>
+<li>
+<p>Wähle die Anzahl der Ergebnisse pro Seite.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Suchen</strong> (<span class="icon"><i class="fa fa-search" style="color:blue"></i></span>), um die Ergebnisse anzuzeigen.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</main>

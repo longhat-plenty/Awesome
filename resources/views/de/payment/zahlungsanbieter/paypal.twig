@@ -1,0 +1,464 @@
+<aside class="plenty-anchor-navbar">
+    <div class="sticky-wrapper">
+        <div class="sticky-container" data-fn="sticky-container" data-fn-options="{ onLoadHashScrollToLink: true }">
+            <div id="toc" class="toc">
+<div id="toctitle">Inhalt</div>
+<ul class="sectlevel1">
+<li><a href="#10"><span>1.</span><span> Wichtige Hinweise</span></a></li>
+<li><a href="#20"><span>2.</span><span> Bei PayPal registrieren</span></a></li>
+<li><a href="#30"><span>3.</span><span> PayPal in Callisto einrichten</span></a></li>
+<li><a href="#40"><span>4.</span><span> Zahlungsart aktivieren</span></a></li>
+<li><a href="#50"><span>5.</span><span> PayPal sofortige Zahlungsbestätigung (IPN) aktivieren</span></a></li>
+<li><a href="#60"><span>6.</span><span> UTF-8-Codierung einstellen</span></a></li>
+<li><a href="#70"><span>7.</span><span> Direkte Zahlungen an deine E-Mail-Adressen deaktivieren</span></a></li>
+<li><a href="#80"><span>8.</span><span> PayPal-Abrechnungsbericht einrichten</span></a></li>
+<li><a href="#8"><span>9.</span><span> Gesamtbetrag erstatten und automatisch an PayPal senden</span></a></li>
+</ul>
+</div>
+        </div>
+    </div>
+</aside>
+
+<main id="main">
+    <h1>Alter Webshop: PayPal</h1><div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Wichtig"></i>
+</td>
+<td class="content">
+<div class="title">Einrichtung der Schnittstelle nur in Callisto Shops</div>
+<div class="paragraph">
+<p>Diese Handbuchseite beschreibt ausschließlich die Einrichtung der Schnittstelle <strong>PayPal</strong> für Callisto Shops. Für die Verwendung von <strong>PayPal</strong> in Ceres Shops erhältst du ausführliche Informationen in der Beschreibung des Plugins im <a href="https://marketplace.plentymarkets.com/plugins/payment/PayPal_4690" target="_blank" rel="noopener">plentyMarketplace</a>.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>PayPal wird in der Kaufabwicklung als Zahlungsart für Marktplätze wie eBay oder Amazon, aber auch als Zahlungsmittel für Bestellungen über den Webshop genutzt. plentymarkets bietet PayPal im Webshop und bei der Kaufabwicklung zur Abwicklung von Zahlungen an. Weitere allgemeine Informationen über PayPal erhältst du auf unserer <a href="https://www.plentymarkets.eu/software/funktionen-technologie/online-shop/paypal/a-1698/" target="_blank" rel="noopener">Webseite</a>.</p>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="10">1. Wichtige Hinweise</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Nachdem der Kunde einen Artikel in den Warenkorb gelegt hat (auf der Seite 'AfterArticle2Basket'), wird eine Schaltfläche angezeigt, über den der Kunde direkt zu PayPal weitergeleitet wird. Der Kunde muss sich daraufhin bei PayPal einloggen. Nach dem Bestätigen der Zahlung dort wird der Kunde automatisch zur Eingabe der Rechnungsanschrift in den Webshop zurückgeleitet. Dabei wird, sofern er nicht auch im Webshop eingeloggt ist, ein neuer Kunde angelegt. Der Kunde kann in dem Fall seine Daten noch entsprechend ändern. Danach durchläuft er die weiteren Schritte im Bestellvorgang wie üblich. Erst nach Abschluss der Bestellung wird die Zahlung durch PayPal veranlasst.</p>
+</div>
+<div class="paragraph">
+<p>Der Ablauf kann auch aus dem Warenkorb heraus ausgeführt werden, wenn dort die entsprechende Schaltfläche angeklickt wird. Darüber hinaus ist es auch möglich, PayPal erst in der Kaufabwicklung bei der Auswahl der Zahlungsart zu wählen. Hierbei wird man auf die PayPal-Seite weitergeleitet und es erfolgt derselbe Vorgang wie eben beschrieben.</p>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="20">2. Bei PayPal registrieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Registriere dich zunächst bei <a href="https://www.paypal.com/de/merchantsignup/applicationChecklist?signupType=CREATE_NEW_ACCOUNT&amp;productIntentId=pp_express" target="_blank" rel="noopener">PayPal</a>. Du kannst für deine Zahlungen E-Mail-Adressen je Mandant (Shop) einrichten. Generell werden an die erste angegebene E-Mail-Adresse alle durch plentymarkets veranlassten Zahlungen übermittelt. Wenn du für einzelne Shops eine andere Adresse für die Zahlungen hinterlegen möchtest, füge je Mandant (Shop) beim <a href="/payment/zahlungsanbieter/paypal#30">Einrichten der Schnittstelle</a> ein eigenes Konto hinzu.</p>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="30">3. PayPal in Callisto einrichten</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Um die Schnittstelle zu PayPal für deinen Callisto Shop in plentymarkets einzurichten, gehe wie im Folgenden beschrieben vor.</p>
+</div>
+<div class="paragraph instruction">
+<p>Schnittstelle zu PayPal einrichten:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Zahlung » Zahlungsarten</strong>.</p>
+</li>
+<li>
+<p>Aktiviere die Einstellung <strong>Auch inaktive zeigen</strong>.</p>
+</li>
+<li>
+<p>Öffne den Ordner <strong>International</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>PayPal</strong>.<br>
+→ Das Tab <strong>Einstellungen</strong> wird geöffnet.</p>
+</li>
+<li>
+<p>Wechsle in das Tab <strong>Schnittstelle</strong>.</p>
+</li>
+<li>
+<p>Klappe den Mandanten auf.</p>
+</li>
+<li>
+<p>Nimm die Einstellungen vor. Beachte dazu die Erläuterungen in <a href="#tabelle-einrichtung-schnittstelle-paypal">Tabelle 1</a>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> die Einstellungen.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Konto hinzufügen</strong>.<br>
+→ Du wirst zu PayPal weitergeleitet.</p>
+</li>
+<li>
+<p>Logge dich ein.</p>
+</li>
+<li>
+<p>Bestätigen den Zugriff auf dein PayPal-Konto durch plentymarkets.<br>
+→ Du wirst in dein plentymarkets System weitergeleitet.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<table id="tabelle-einrichtung-schnittstelle-paypal" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 1. PayPal-Schnittstelle einrichten</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Erläuterung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URL zu Ihrem Logo</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eine https-URL, die zum Logo-Bild führt. Gültige Formate sind .gif, .jpg oder .png. Die Maximalgröße beträgt 190 Pixel in der Breite und 60 Pixel in der Höhe. PayPal schneidet größere Bilder ab. PayPal platziert das Logo ganz oben in der Warenkorbübersicht.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Warenkorbumrandung</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Der hexadezimale HTML-Code der Haupt-Erkennungsfarbe. PayPal lässt die Farbe in einem Rahmen um die Warenkorb-Übersicht in der PayPal-Checkout-Benutzeroberfläche stufenlos zu weiß verlaufen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zeitpunkt PayPal Zahlungseinzug</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Sale (sofortiger Zahlungseinzug)</strong> = Zahlung direkt nach Abschluss der Bestellung einziehen.<br>
+<strong>Authorization &amp; Capture</strong> = Bei Abschluss der Bestellung wird <strong>Auth</strong> ausgelöst und bei Versand <strong>Capture</strong>. Somit wird die Zahlung erst eingezogen, wenn <strong>Capture</strong> ausgelöst wird.<br>
+<strong>Order (OrderAuthCapture-Verfahren)</strong> = Bei Abschluss der Bestellung, die in mehrere Teillieferungen aufgeteilt wird, wird <strong>Auth</strong> ausgelöst und bei Versand von Teillieferungen <strong>Capture</strong>. Teilzahlungen werden erst eingezogen, wenn <strong>Capture</strong> ausgelöst wird.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Standard (für alle Mandanten verwenden)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nur sichtbar, wenn Mandanten eingerichtet sind. Aktivieren, um die Kontoeinstellungen, die über <strong>Konto hinzufügen</strong> für den Hauptshop gespeichert wurden, für alle Mandanten (Shops) zu übernehmen, unabhängig davon, was für andere Mandanten gespeichert wurde. Deaktivieren, um separate Zugangsdaten für weitere Mandanten (Shops) zu verwenden. Webshops, für die kein Konto hinzugefügt wurde, können mit PayPal nicht genutzt werden.<br>
+Zur Unterstützung mehrerer Mandanten muss im Menü <a href="/webshop/webshop-einrichten#grundeinstellungen">Einrichtung » Mandant » Mandant wählen » Webshop » Einstellungen</a> für die Option <strong>Login</strong> die Einstellung <strong>Login in jedem einzelnen Shop ermöglichen</strong> aktiviert sein.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="sect1">
+<h2 id="40">4. Zahlungsart aktivieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Richte die <a href="/payment/zahlungsarten-verwalten#20">Zahlungsart</a> PayPal in deinem plentymarkets Backend ein und aktivieren die Zahlungsart. Prüfe zudem die Einstellungen für <strong>Erlaubte Zahlungsarten</strong> in den <a href="/payment/zahlungsarten-verwalten#30">Kundenklassen</a> und für <strong>Gesperrte Zahlungsarten</strong> in den <a href="/fulfillment/versand-vorbereiten#1000">Versandprofilen</a>.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warnung"></i>
+</td>
+<td class="content">
+<div class="title">Achtung: AGB bei PayPal</div>
+<div class="paragraph">
+<p>Die Einstellung eines <strong>Aufpreises</strong> für die Entgegennahme der Bezahlung mit PayPal widerspricht den Allgemeinen Geschäftsbedingungen von PayPal.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="50">5. PayPal sofortige Zahlungsbestätigung (IPN) aktivieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>plentymarkets stellt alle drei Stunden aktiv eine Anfrage an PayPal nach neuen Zahlungen. Hierbei wird der Zeitraum der letzten 48 Stunden abgefragt. Vielen Händlern ist dieses Abfrageintervall allerdings zu groß. Dieses kann über die PayPal-Option <strong>Einstellungen für sofortige Zahlungsbestätigung (IPN)</strong> verkürzt werden.</p>
+</div>
+<div class="paragraph">
+<p>Bei Zahlungen über den plentymarkets Webshop oder Checkout wird die sofortige Zahlungsbestätigung automatisch aktiviert. Falls deine Endkunden aber über einen anderen Marktplatz, z.B. eBay, die Zahlung an dein PayPal-Konto vornehmen, dann solltest du die sofortige Zahlungsbestätigung global für dein PayPal-Konto aktivieren. Dadurch stellst du sicher, dass auch tagelang offene Zahlungen wie z.B. <strong>Überweisung über PayPal</strong> wirklich in deinem plentymarkets System ankommen.</p>
+</div>
+<div class="paragraph instruction">
+<p>PayPal-Funktion IPN aktivieren:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Logge dich bei PayPal mit deiner E-Mail-Adresse ein.</p>
+</li>
+<li>
+<p>Wähle den Bereich <strong>Übersicht » Verkäufereinstellungen » Benachrichtigungen über Sofortzahlungen</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Einstellungen für sofortige Zahlungsbestätigung wählen</strong>.</p>
+</li>
+<li>
+<p>Aktiviere die Option.</p>
+</li>
+<li>
+<p>Gib als Benachrichtigungs-URL folgende Adresse ein:<br>
+<strong><a href="https://www.MEINE-SHOP-ADRESSE.de/plenty/api/payment_notification.php?payment=PayPal" class="bare">https://www.MEINE-SHOP-ADRESSE.de/plenty/api/payment_notification.php?payment=PayPal</a></strong><br>
+→ Ersetze dabei <strong>www.MEINE-SHOP-ADRESSE.de</strong> durch deine eigene Shop-Domain.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Die oben angegebene Adresse funktioniert auch, wenn du die PayPal-Standard-Integration verwendest oder im Webshop PayPal als Zahlungsart nicht anbietest.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warnung"></i>
+</td>
+<td class="content">
+<div class="title">SSL-Zertifikat</div>
+<div class="paragraph">
+<p>Wenn du in deinem Webshop keine SSL-Verschlüsselung verwendest, verwende die URL mit http, statt mit https. Wir empfehlen die Verwendung eines <a href="/basics/admin-aufgaben/plentymarkets-konto#ssl-zertifikat">SSL-Zertifikats</a>.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="{{plugin_path('PlentyManual')}}/images/payment/assets/DE-Zahlungsarten-PayPal-01.png" alt="DE Zahlungsarten PayPal 01">
+</div>
+<div class="title">Bild 1. Sofortige Zahlungsbestätigung (IPN) aktivieren</div>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="60">6. UTF-8-Codierung einstellen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Damit UTF-8-Codierung, z.B. auch chinesische Zeichen, korrekt dargestellt wird, musst du die folgenden Einstellungen in deinem PayPal-Konto vornehmen.</p>
+</div>
+<div class="paragraph instruction">
+<p>UTF-8-Codierung einstellen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Logge dich bei PayPal mit deiner E-Mail-Adresse ein.</p>
+</li>
+<li>
+<p>Öffne den Bereich <strong>Übersicht » Verkäufereinstellungen</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Sprachliche Kodierung von PayPal-Buttons</strong>.</p>
+</li>
+<li>
+<p>Klicke dort auf <strong>Weitere Optionen</strong>.</p>
+</li>
+<li>
+<p>Wähle aus der Dropdown-Liste <strong>Codierung</strong> die Option <strong>UTF-8</strong> (<a href="#bild-codierungsoptionen-paypal">Bild 2</a>).</p>
+</li>
+<li>
+<p>Aktiviere <strong>Ja</strong> für die Option, ob die gewählte Codierung auch verwendet werden soll, wenn PayPal Daten an dich sendet.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div id="bild-codierungsoptionen-paypal" class="imageblock">
+<div class="content">
+<img src="{{plugin_path('PlentyManual')}}/images/payment/assets/DE-Zahlungsarten-PayPal-02.png" alt="DE Zahlungsarten PayPal 02">
+</div>
+<div class="title">Bild 2. Weitere Codierungsoptionen für PayPal</div>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="70">7. Direkte Zahlungen an deine E-Mail-Adressen deaktivieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Eine weitere Einstellung im PayPal-Konto kann für Händler sehr sinnvoll sein: <strong>Deaktivieren von direkten Zahlungen an Ihre E-Mail-Adressen</strong>. Mit der Funktion <strong>Geld senden</strong> können alle PayPal-Kunden nach Belieben Zahlungen an E-Mail-Adressen senden. Dabei ist die Angabe einer Lieferanschrift nicht erforderlich, wodurch wiederum der Verkäuferschutz außer Kraft gesetzt wird. Daher kann es Sinn machen, direkte Zahlungen an E-Mail-Adressen in deinen PayPal-Einstellungen zu blockieren.</p>
+</div>
+<div class="paragraph instruction">
+<p>Direkte Zahlungen an E-Mail-Adressen deaktivieren:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Logge dich bei PayPal mit deiner E-Mail-Adresse ein.</p>
+</li>
+<li>
+<p>Öffne den Bereich <strong>Übersicht » Verkäufereinstellungen » Zahlungen sperren</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Aktualisieren</strong>.</p>
+</li>
+<li>
+<p>Aktiviere die Option <strong>Zahlungen über die Option "Zahlung senden" unter "Geld senden"</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="{{plugin_path('PlentyManual')}}/images/payment/assets/DE-Zahlungsarten-PayPal-03.png" alt="DE Zahlungsarten PayPal 03">
+</div>
+<div class="title">Bild 3. Einstellungen für den Zahlungsempfang</div>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="80">8. PayPal-Abrechnungsbericht einrichten</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Der PayPal-Abrechnungsbericht dient der Zuordnung von PayPal-Zahlungen zu Aufträgen, da in ihm alle Zahlungen eines Tages enthalten sind. Insbesondere bei einer Vielzahl an PayPal-Zahlungen ist der Abrechnungsbericht die sicherste Methode, um eine Zuordnung der Zahlungen zu Aufträgen zu gewährleisten. Für den Zugriff auf den FTP-Server, von dem die Abrechnungsberichte geladen werden, musst ein Extra-Konto bei PayPal erstellen und anschließend deinen eigenen Benutzernamen generieren. Die Zugangsdaten zu diesem Konto gibst du in plentymarkets ein.</p>
+</div>
+<div class="paragraph instruction">
+<p>Zugangsdaten eingeben:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Zahlung » Zahlungsarten</strong>.</p>
+</li>
+<li>
+<p>Aktiviere die Einstellung <strong>Auch inaktive zeigen</strong>.</p>
+</li>
+<li>
+<p>Öffne den Ordner <strong>International</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>PayPal</strong>.<br>
+→ Das Tab <strong>Einstellungen</strong> wird geöffnet.</p>
+</li>
+<li>
+<p>Wechsle in das Tab <strong>Abrechnungsbericht</strong>.</p>
+</li>
+<li>
+<p>Gib deinen <strong>User name</strong> ein.</p>
+</li>
+<li>
+<p>Gib das <strong>Password</strong> ein.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> die Einstellungen.<br>
+→ Der Abrechnungsbericht wird nun automatisch einmal täglich abgerufen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Die abgerufenen Abrechnungsberichte siehst im Dokumentenarchiv. Die Zuordnung der Zahlungen aus den Berichten erfolgt automatisch. Die Berichte müssen für eine Zuordnung nicht eingesehen werden.</p>
+</div>
+<div class="paragraph instruction">
+<p>Abrechnungsbericht ansehen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Aufträge » Dokumentenarchiv</strong>.</p>
+</li>
+<li>
+<p>Wähle in der Dropdown-Liste <strong>Dokument</strong> die Option <strong>Abrechnungsbericht</strong>.<br>
+→ Weitere Einstellungen sind optional.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> die Einstellungen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Im <a href="/daten/api-log">API-Log</a> findest du Einträge mit Informationen zum Verbindungsaufbau zum SFTP-Server von PayPal und z.B. zur Anzahl der im Abrechnungsbericht enthaltenen Transaktionen.</p>
+</div>
+</div>
+</div><div class="sect1">
+<h2 id="8">9. Gesamtbetrag erstatten und automatisch an PayPal senden</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Um dem Käufer den gesamten Betrag zu erstatten, legst du einen Auftrag vom Typ <strong>Gutschrift</strong> an. Gutschriften werden automatisch der Zahlung zugeordnet.</p>
+</div>
+<div class="paragraph instruction">
+<p>Gutschrift anlegen, um Gesamtbetrag zu erstatten:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Aufträge » Aufträge bearbeiten</strong>.</p>
+</li>
+<li>
+<p>Öffne hier den gewünschten PayPal-Auftrag.</p>
+</li>
+<li>
+<p>Klicke im Tab <strong>Übersicht</strong> auf die Dropdown-Liste <strong>Gutschrift …​</strong> und wähle die Option <strong>anlegen</strong>.<br>
+→ Die Gutschrift wird angelegt.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Anschließend richte eine <a href="/automatisierung/ereignisaktionen">Ereignisaktion</a> ein, um die Beträge automatisch an PayPal zu senden.</p>
+</div>
+<div class="openblock collapseBox">
+<div class="title">Ereignisaktion einrichten</div>
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Öffne das Menü <strong>Einrichtung » Aufträge » Ereignisse</strong>.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Ereignisaktion hinzufügen</strong>.<br>
+→ Das Fenster <strong>Neue Ereignisaktion erstellen</strong> wird geöffnet.</p>
+</li>
+<li>
+<p>Gib einen Namen ein.</p>
+</li>
+<li>
+<p>Wähle das <strong>Ereignis</strong> gemäß Tabelle 2.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> die Einstellungen.</p>
+</li>
+<li>
+<p>Nimm die Einstellungen gemäß Tabelle 2 vor.</p>
+</li>
+<li>
+<p>Setze ein Häkchen bei <strong>Aktiv</strong>.</p>
+</li>
+<li>
+<p><strong>Speichere</strong> die Einstellungen.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 2. Ereignisaktion zum automatischen Senden von Rückzahlungen an PayPal</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 42.8571%;">
+<col style="width: 42.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Option</th>
+<th class="tableblock halign-left valign-top">Auswahl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ereignis</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftragsanlage: Neue Gutschrift</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auftrag &gt; Zahlungsart</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>PayPal</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Aktion</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zahlungsarten &gt; Rückzahlung an PayPal senden</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>

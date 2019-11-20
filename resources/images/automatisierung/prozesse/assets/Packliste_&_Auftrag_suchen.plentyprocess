@@ -1,0 +1,285 @@
+{
+    "GWT_Version": "",
+    "Name": "Packliste & Auftrag suchen (2885)",
+    "Visibility": "global",
+    "Changeable": "admin",
+    "ProcessingType": "until_finished",
+    "Color": "4C68D4",
+    "LogisticProcessStepList": [
+        {
+            "Name": "10 Auftr\u00e4ge Status 5.0",
+            "Position": 0,
+            "AutoRunNext": 1,
+            "StepType": "order_process",
+            "Configuration": {
+                "limit": "10",
+                "filterOrderStatus": "",
+                "filterOrderBy": "none",
+                "filterOrderType": "asc",
+                "flagupOrderStatus": "",
+                "flagupUserId": "",
+                "flagupOrderFlag": "3"
+            },
+            "LogisticProcessStepActionList": [
+                {
+                    "Id": 50,
+                    "Position": 0,
+                    "Type": "PDFPicklist",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "orderBy": "0",
+                        "hideActionValue": "0",
+                        "searchOpenPicklist": "0"
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Printing",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 51,
+                    "Position": 1,
+                    "Type": "PDFPacklist",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Printing",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 52,
+                    "Position": 2,
+                    "Type": "Dialog",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "ShowDialog",
+                            "Configuration": {
+                                "text": "<h1>Pickliste und Packliste wurden an den Drucker gesendet.<\/h1>\n",
+                                "closingDelay": "3",
+                                "title": "Dokumente gedruckt"
+                            }
+                        },
+                        {
+                            "Position": 1,
+                            "Type": "Sound",
+                            "Configuration": {
+                                "soundId": "completed1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Id": 296,
+                    "Position": 3,
+                    "Type": "PDFDeliveryNote",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Caching",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 297,
+                    "Position": 4,
+                    "Type": "PDFInvoice",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": ""
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Caching",
+                            "Configuration": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Auftrag scannen",
+            "Position": 1,
+            "AutoRunNext": 0,
+            "StepType": "order_edit",
+            "Configuration": [],
+            "LogisticProcessStepActionList": [
+                {
+                    "Id": 53,
+                    "Position": 0,
+                    "Type": "SearchOrder",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 54,
+                    "Position": 1,
+                    "Type": "ChangeOrder",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "SetOrderStatus",
+                            "Configuration": {
+                                "orderStatus": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Id": 55,
+                    "Position": 2,
+                    "Type": "PDFInvoice",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Saving",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 56,
+                    "Position": 3,
+                    "Type": "PDFDeliveryNote",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Printing",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 57,
+                    "Position": 4,
+                    "Type": "Polling",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0",
+                        "orderBy": [
+                            "order"
+                        ],
+                        "orderType": [
+                            "asc"
+                        ],
+                        "pollingProvider": "DHLEasyLog",
+                        "csvSeparator": "default",
+                        "addHeaderRow": "1"
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Saving",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 58,
+                    "Position": 5,
+                    "Type": "Dialog",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "ShowDialog",
+                            "Configuration": {
+                                "text": "<h2>Alle Dokumente wurden generiert.<\/h2>\n<h3>Starte mit dem Verpacken!<\/h3>",
+                                "closingDelay": "2",
+                                "title": "Dokumente generiert"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Id": 59,
+                    "Position": 6,
+                    "Type": "GoodsIssue",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "BookGoodsIssue",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 60,
+                    "Position": 7,
+                    "Type": "Email",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "emailTemplateId": "",
+                        "hideActionValue": "1"
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "SendEmail",
+                            "Configuration": []
+                        },
+                        {
+                            "Position": 1,
+                            "Type": "Sound",
+                            "Configuration": {
+                                "soundId": "completed1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Id": 61,
+                    "Position": 8,
+                    "Type": "Jump",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "targetActionId": "53",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                }
+            ]
+        }
+    ]
+}

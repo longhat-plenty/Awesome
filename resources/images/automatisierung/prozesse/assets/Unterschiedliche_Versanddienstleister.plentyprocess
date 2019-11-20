@@ -1,0 +1,578 @@
+{
+    "GWT_Version": "",
+    "Name": "Unterschiedliche Versandd. (2950)",
+    "Visibility": "global",
+    "Changeable": "admin",
+    "ProcessingType": "until_finished",
+    "Color": "1096EE",
+    "LogisticProcessStepList": [
+        {
+            "Name": "10 Auftr\u00e4ge im Status 5.0",
+            "Position": 0,
+            "AutoRunNext": 0,
+            "StepType": "order_process",
+            "Configuration": {
+                "limit": "10",
+                "filterOrderStatus": "",
+                "filterOrderBy": "order_id",
+                "filterOrderType": "desc",
+                "flagupOrderStatus": "",
+                "flagupUserId": "",
+                "flagupOrderFlag": "5"
+            },
+            "LogisticProcessStepActionList": [
+                {
+                    "Id": 300,
+                    "Position": 0,
+                    "Type": "ChangeOrder",
+                    "Correspondent": "79",
+                    "Handling": "error",
+                    "Configuration": {
+                        "hideActionValue": ""
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "SetOrderStatus",
+                            "Configuration": {
+                                "orderStatus": ""
+                            }
+                        },
+                        {
+                            "Position": 1,
+                            "Type": "AddOrderInformation",
+                            "Configuration": {
+                                "informationType": "staticOrderInformation",
+                                "appendErrors": "1",
+                                "message": "<p>Fehler beim Labeldruck!<\/p>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Id": 301,
+                    "Position": 0,
+                    "Type": "ChangeOrder",
+                    "Correspondent": "83",
+                    "Handling": "error",
+                    "Configuration": {
+                        "hideActionValue": ""
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "SetOrderStatus",
+                            "Configuration": {
+                                "orderStatus": ""
+                            }
+                        },
+                        {
+                            "Position": 1,
+                            "Type": "AddOrderInformation",
+                            "Configuration": {
+                                "informationType": "staticOrderInformation",
+                                "appendErrors": "1",
+                                "message": "<p>Fehler beim Labeldruck!<\/p>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Id": 62,
+                    "Position": 0,
+                    "Type": "PDFPicklist",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "orderBy": "0",
+                        "hideActionValue": "0",
+                        "searchOpenPicklist": "0"
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Printing",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 63,
+                    "Position": 1,
+                    "Type": "Dialog",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "ShowDialog",
+                            "Configuration": {
+                                "text": "<h1>Bitte Pickliste entnehmen und Waren aus dem Lager holen.<\/h1>\n",
+                                "closingDelay": "0",
+                                "title": "Pickliste gedruckt"
+                            }
+                        },
+                        {
+                            "Position": 1,
+                            "Type": "Sound",
+                            "Configuration": {
+                                "soundId": "completed1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Id": 298,
+                    "Position": 2,
+                    "Type": "PDFDeliveryNote",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": ""
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Caching",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 299,
+                    "Position": 3,
+                    "Type": "PDFInvoice",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": ""
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Caching",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 64,
+                    "Position": 4,
+                    "Type": "Loop",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "targetActionId": "93",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 65,
+                    "Position": 5,
+                    "Type": "RegisterItems",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "useBoxranges": "",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 66,
+                    "Position": 6,
+                    "Type": "BranchOrder",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0",
+                        "targetActionId": "68",
+                        "orderItemsStatus": "complete",
+                        "conditionType": "all"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 67,
+                    "Position": 7,
+                    "Type": "Jump",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "targetActionId": "65",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 68,
+                    "Position": 8,
+                    "Type": "ChangeOrder",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "SetOrderStatus",
+                            "Configuration": {
+                                "orderStatus": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Id": 69,
+                    "Position": 9,
+                    "Type": "Loop",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "targetActionId": "75",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 70,
+                    "Position": 10,
+                    "Type": "Filter",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0",
+                        "targetActionId": "72",
+                        "filterSerialnumber": "1"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 71,
+                    "Position": 11,
+                    "Type": "Jump",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "targetActionId": "74",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 72,
+                    "Position": 12,
+                    "Type": "SerialnumberOrder",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "RegisterSerialnumbers",
+                            "Configuration": {
+                                "newSerialnumbersAllowed": "1",
+                                "isAutoSaveActive": "1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Id": 73,
+                    "Position": 13,
+                    "Type": "ClearFilter",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0",
+                        "filterActionSourceId": "70"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 74,
+                    "Position": 14,
+                    "Type": "Jump",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "targetActionId": "69",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 75,
+                    "Position": 15,
+                    "Type": "PDFInvoice",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Saving",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 76,
+                    "Position": 16,
+                    "Type": "PDFDeliveryNote",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Printing",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 77,
+                    "Position": 17,
+                    "Type": "Filter",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0",
+                        "targetActionId": "79",
+                        "filterPspId": []
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 78,
+                    "Position": 18,
+                    "Type": "Jump",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "targetActionId": "81",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 79,
+                    "Position": 19,
+                    "Type": "RegisterShipment",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "shippingProvider": "DpdCloudService",
+                        "hideActionValue": "0",
+                        "onError": "abort",
+                        "jumpToActionId": "62"
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Printing",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 80,
+                    "Position": 20,
+                    "Type": "ClearFilter",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0",
+                        "filterActionSourceId": "77"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 81,
+                    "Position": 21,
+                    "Type": "Filter",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0",
+                        "targetActionId": "83",
+                        "filterPspId": []
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 82,
+                    "Position": 22,
+                    "Type": "Jump",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "targetActionId": "85",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 83,
+                    "Position": 23,
+                    "Type": "RegisterShipment",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "shippingProvider": "HermesProfiPaket",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Printing",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 84,
+                    "Position": 24,
+                    "Type": "ClearFilter",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0",
+                        "filterActionSourceId": "81"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 85,
+                    "Position": 25,
+                    "Type": "Filter",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0",
+                        "targetActionId": "87",
+                        "filterPspId": []
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 86,
+                    "Position": 26,
+                    "Type": "Jump",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "targetActionId": "89",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 87,
+                    "Position": 27,
+                    "Type": "Polling",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "pollingProvider": "DPPDelisprint",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "Saving",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 88,
+                    "Position": 28,
+                    "Type": "ClearFilter",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "hideActionValue": "0",
+                        "filterActionSourceId": "85"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 89,
+                    "Position": 29,
+                    "Type": "Dialog",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "ShowDialog",
+                            "Configuration": {
+                                "text": "<h1>Alle Dokumente wurden generiert.<\/h1>\n\n<h2>Starte mit dem Verpacken!<\/h2>\n",
+                                "closingDelay": "0",
+                                "title": "Dokumente gedruckt"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Id": 90,
+                    "Position": 30,
+                    "Type": "GoodsIssue",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "BookGoodsIssue",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 91,
+                    "Position": 31,
+                    "Type": "Email",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "emailTemplateId": "",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": [
+                        {
+                            "Position": 0,
+                            "Type": "SendEmail",
+                            "Configuration": []
+                        }
+                    ]
+                },
+                {
+                    "Id": 92,
+                    "Position": 32,
+                    "Type": "Jump",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": {
+                        "targetActionId": "64",
+                        "hideActionValue": "0"
+                    },
+                    "LogisticProcessStepSubActionList": []
+                },
+                {
+                    "Id": 93,
+                    "Position": 33,
+                    "Type": "Endpoint",
+                    "Correspondent": "0",
+                    "Handling": "standard",
+                    "Configuration": [],
+                    "LogisticProcessStepSubActionList": []
+                }
+            ]
+        }
+    ]
+}
