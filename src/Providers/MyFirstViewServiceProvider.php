@@ -1,11 +1,11 @@
 <?php
 
-namespace MyFirstView\Providers;
+namespace Awesome\Providers;
 
 
 use Plenty\Plugin\ServiceProvider;
 
-    class MyFirstViewServiceProvider extends ServiceProvider
+    class AwesomeViewServiceProvider extends ServiceProvider
     {
         public function register()
         {
