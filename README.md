@@ -2,11 +2,11 @@
 
 # MyFirstView plugin
 
-This is the **MyFirstView** plugin developed by plentymarkets.
+This is the **MyFirstView** plugin developed by plentymarkets. Nooooooooooooooooooo!
 
 ## Requirements
 
-This is a plugin for [plentymarkets 7](https://www.plentymarkets.com). No other plugins are required for running the plugin. Im Plugin!!!!
+This is a plugin for [plentymarkets 7](https://www.plentymarkets.com). No other plugins are required for running the plugin.
 
 ## Installing
 
