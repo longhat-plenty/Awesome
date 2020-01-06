@@ -10,6 +10,5 @@ use Plenty\Plugin\ServiceProvider;
         public function register()
         {
           $test = 'test';
-          $var=0;
         }
     }
