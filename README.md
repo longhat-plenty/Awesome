@@ -2,7 +2,7 @@
 
 # MyFirstView plugin
 
-This is the **MyFirstView** plugin developed by plentymarkets. Nooooooooooooooooooo!
+This is the **MyFirstView** plugin developed by plentymarkets
 
 ## Requirements
 
