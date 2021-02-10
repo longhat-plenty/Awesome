@@ -18,11 +18,6 @@ For detailed information about plugin provisioning refer to [plentymarkets devel
 - Learn how to create your [first plentymarkets back end view](https://developers.plentymarkets.com/tutorials/backendview)
 - Overview of plentymarkets [plugin interfaces](https://developers.plentymarkets.com/dev-doc/basics#guide-interface)
 - The plentymarkets [REST API](https://developers.plentymarkets.com/rest-doc/introduction)
-
-## Join our community
-
-Sign up today and become a member of our [forum](https://forum.plentymarkets.com/c/plugin-entwicklung). Discuss the latest trends in plugin development and share your ideas with our community.
-
 ## Versioning
 
 Visit our forum and find the latest news and updates in our [Changelog](https://forum.plentymarkets.com/c/changelog?order=created).
